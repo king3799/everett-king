@@ -1,9 +1,9 @@
 import { Github, Mail } from "lucide-react";
 export default function Hero() {
   return (
-    <section className="mt-24">
+    <section className="mt-24" id="home">
       {/* Hero Content */}
-      <div className="flex flex-col items-center justify-center text-center flex-1 px-6" id="home">
+      <div className="flex flex-col items-center justify-center text-center flex-1 px-6">
 
         {/* Profile Image */}
         <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
