@@ -1,27 +1,27 @@
 import { Github, Mail } from "lucide-react";
-import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "../animations";
 export default function Hero() {
   return (
     <section className="pt-24">
 
-      
+
 
       {/* Hero Content */}
       <div className="flex flex-col items-center justify-center text-center flex-1 px-6" id="home">
 
         {/* Profile Image */}
-       <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
+        <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
           <img
             src="/profile.jpg"
             alt="Susan Miller"
             className="w-full h-full object-cover rounded-full"
           />
         </div>
-
-        {/* Heading */}
         <h2 className="text-6xl font-bold mb-4">
-          Thanks for visiting, I'm Susan Miller
+          Susan Miller
+        </h2>
+        {/* Heading */}
+        <h2 className="text-3xl font-bold mb-4">
+          Thanks for visiting!
         </h2>
 
         {/* Subtitle */}
@@ -38,19 +38,23 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex gap-6 mb-10">
-            <a
-              href={`#contact`}
-              className={`transition duration-300`}
-              >
-                <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
-                Get In Touch
-                </button>
-            </a>
-         
+          <a
+            href={`#contact`}
+            className={`transition duration-300`}
+          >
+            <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
+              Get In Touch
+            </button>
+          </a>
 
-          <button className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition">
-            View Work
-          </button>
+          <a
+            href={`#projects`}
+            className={`transition duration-300`}
+          >
+            <button className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition">
+              View Work
+            </button>
+          </a>
         </div>
 
         {/* Icons */}
@@ -67,7 +71,7 @@ export default function Hero() {
           >
             <Mail className="cursor-pointer hover:text-rose-500 transition" />
           </a>
-          
+
         </div>
 
       </div>
