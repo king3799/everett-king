@@ -47,8 +47,10 @@ export default function About() {
             <div className="relative">
               
               <div className="flex justify-between">
-                <h4 className="font-semibold">Senior Web Developer</h4>
+                <div>
+                  <h4 className="font-semibold">Senior Web Developer</h4>
                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
+                </div>
                 <span className="text-sm text-gray-500">
                   March 2025 - Present
                 </span>
