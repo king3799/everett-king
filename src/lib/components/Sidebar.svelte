@@ -11,9 +11,6 @@
     <a href="mailto:susan0907miller@outlook.com" class="flex items-center gap-2 mb-2">
     <Mail class="w-5 h-5"/> Email
     </a>
-    <!-- <a href="https://www.linkedin.com/in/susan-miller" target="_blank" class="flex items-center gap-2 mb-2">
-    <Linkedin class="w-5 h-5"/> LinkedIn
-    </a> -->
     
     <a href="tel:+6590907xxxx" class="flex items-center gap-2 mb-2">
     <Phone class="w-5 h-5"/> Phone
