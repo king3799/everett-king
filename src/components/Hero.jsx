@@ -71,9 +71,7 @@ export default function Hero() {
           >
             <Mail className="cursor-pointer hover:text-rose-500 transition" />
           </a>
-
         </div>
-
       </div>
     </section>
   );

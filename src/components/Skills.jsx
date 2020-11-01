@@ -43,6 +43,7 @@ export default function Skills() {
                     "Redux",
                     "Vuex",
                     "Next.js",
+                    "Android",
                     "Nuxt.js",
                     "SvelteKit",
                     "Tailwind CSS",
