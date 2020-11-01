@@ -12,7 +12,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-gray-500">
-            My journey as a Senior Web developer and my Professional background
+            dfkdjdkMy journey as a Senior Web developer and my Professional background
           </p>
         </div>
 
