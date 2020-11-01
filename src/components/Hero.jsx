@@ -2,9 +2,6 @@ import { Github, Mail } from "lucide-react";
 export default function Hero() {
   return (
     <section className="pt-24">
-
-
-
       {/* Hero Content */}
       <div className="flex flex-col items-center justify-center text-center flex-1 px-6" id="home">
 
@@ -32,7 +29,8 @@ export default function Hero() {
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
           5+ years of experience in full-stack web development specializing in
-          JavaScript, React, Vue, and Node.js. Passionate about building modern,
+          JavaScript, NodeJs, Laravel, React, Vuejs, and Node.js. 
+          Passionate about building modern,
           scalable web applications and delivering exceptional user experiences.
         </p>
 

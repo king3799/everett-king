@@ -28,8 +28,8 @@ export default function Skills() {
             icon={<Code2 size={20} />}
             title="Languages"
             skills={[
-              "JavaScript", "TypeScript", "HTML5",
-              "CSS3", "SASS/SCSS", "SQL","Python","PHP"
+              "JavaScript","PHP", "TypeScript", "Java", "C/C++", "HTML5",
+              "CSS3", "SASS/SCSS", "SQL","Python" , 
             ]}
           />
 
@@ -38,12 +38,13 @@ export default function Skills() {
             icon={<Layout size={20} />}
             title="Frontend"
             skills={[
-                   "React",
+                    "React",
                     "Vue.js",
                     "Redux",
                     "Vuex",
                     "Next.js",
                     "Nuxt.js",
+                    "SvelteKit",
                     "Tailwind CSS",
                     "Bootstrap",
                     "Material-UI",

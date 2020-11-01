@@ -12,17 +12,19 @@ export default function About() {
             About Me
           </h2>
           <p className="text-gray-500">
-            My journey as a developer and my professional background
+            My journey as a Senior Web developer and my Professional background
           </p>
         </div>
 
         {/* Profile Box */}
-        <div className="bg-rose-50 border border-rose-200 rounded-2xl p-8 mb-16">
+        <div className="mb-16">
+           <div className="flex items-center gap-3 mb-8">
+            <MapPin className="text-rose-500" size={20} />
+            <h3 className="text-xl font-semibold">Profile</h3>
+          </div>
           <div className="flex items-start gap-4">
-            <MapPin className="text-rose-500 mt-1" size={20} />
-            <div>
-              <h3 className="font-semibold mb-2">Profile</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div  className="space-y-10 border-l border-rose-200 pl-8">
+              <p className="text-gray-700 leading-relaxed ">
                 Senior Web Developer with 5+ years of experience in full-stack
                 development. Delivered scalable, user-friendly applications.
                 Recently relocated and continuously improving communication skills.
