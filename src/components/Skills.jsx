@@ -10,7 +10,7 @@ import {
 export default function Skills() {
   return (
     <section className="bg-[#f5f5f5] py-20 px-6" id="skills">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto py-5">
 
         {/* Section Header */}
         <div className="text-center mb-16">

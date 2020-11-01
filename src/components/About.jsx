@@ -3,21 +3,11 @@ import { MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 py-24 text-gray-900">
+    <section id="about" className="px-6 py-10 text-gray-900">
       <div className="max-w-5xl mx-auto">
 
-        {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-semibold mb-3">
-            About Me
-          </h2>
-          {/* <p className="text-gray-500">
-            My journey as a Senior Web developer and my Professional background
-          </p> */}
-        </div>
-
         {/* Profile Box */}
-        <div className="mb-16">
+        <div className="mb-16 ">
            <div className="flex items-center gap-3 mb-8">
             <MapPin className="text-rose-500" size={20} />
             <h3 className="text-xl font-semibold">Profile</h3>

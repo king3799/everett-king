@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Projects() {
   return (
     <section className="py-20 px-6" id="projects">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto py-5">
 
         {/* Section Header */}
         <div className="text-center mb-16">

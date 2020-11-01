@@ -42,7 +42,7 @@ export default function Contact() {
         viewport={{ once: true }}
         id="contact"
       >
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto py-5">
 
           {/* Header */}
           <motion.div

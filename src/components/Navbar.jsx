@@ -20,21 +20,23 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
           ? "bg-white shadow-md"
           : "bg-white"
-      }`}
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
-      
+
         <motion.h1
           whileHover={{ scale: 1.05 }}
-          className="flex text-xl font-semibold text-rose-500 cursor-pointer"
+          className="flex text-xl font-semibold text-rose-500 cursor-pointer items-center"
         >
-          <img src="/icon.avif" alt="My Love bear" className="w-20  object-cover rounded-full"/>
+          <img src="/icon.avif" alt="My Love bear" className="w-20  object-cover rounded-full" />
+          <h2 className="text-1xl text-rose-500 text-center">
+            Susan Miller
+          </h2>
         </motion.h1>
 
         {/* Links */}
@@ -44,11 +46,10 @@ export default function Navbar() {
               <a
                 href={`#${link.toLowerCase()}`}
                 onClick={() => setActive(link)}
-                className={`transition duration-300 ${
-                  active === link
+                className={`transition duration-300 ${active === link
                     ? "text-gray-500 hover:text-rose-500"
                     : "text-rose-500"
-                }`}
+                  }`}
               >
                 {link}
               </a>
