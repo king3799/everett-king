@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Mail, Phone, Github, Linkedin } from 'lucide-svelte';
+  import { Mail, Phone, Github } from 'lucide-svelte';
   import logo from '$lib/assets/office.png';
 </script>
 
