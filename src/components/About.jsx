@@ -48,7 +48,7 @@ export default function About() {
               
               <div className="flex justify-between">
                 <h4 className="font-semibold">Senior Web Developer</h4>
-                
+                 <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
                 <span className="text-sm text-gray-500">
                   March 2025 - Present
                 </span>
@@ -66,6 +66,7 @@ export default function About() {
               <div className="flex justify-between">
                 <div>
                   <h4 className="font-semibold">Web Developer</h4>
+                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   June 2022 - February 2025
@@ -84,6 +85,7 @@ export default function About() {
               <div className="flex justify-between">
                 <div>
                   <h4 className="font-semibold">Junior Web Developer</h4>
+                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   June 2020 - May 2022
