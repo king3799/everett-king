@@ -11,7 +11,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-gray-500">
-            Here are some of my recent projects that showcase my skills and experience
+            Here are some of the greatest projects that showcase my skills and experience
           </p>
         </div>
 
@@ -88,25 +88,6 @@ function ProjectCard({ image, title, description, tags }) {
             </span>
           ))}
         </div>
-
-        {/* Links */}
-        {/* <div className="flex items-center gap-6 text-sm">
-          <a
-            href="#"
-            className="flex items-center gap-2 text-rose-500 hover:underline"
-          >
-            <ExternalLink size={16} />
-            Live Demo
-          </a>
-
-          <a
-            href="#"
-            className="flex items-center gap-2 text-gray-600 hover:text-black"
-          >
-            <Github size={16} />
-            Source Code
-          </a>
-        </div> */}
 
       </div>
     </div>

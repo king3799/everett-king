@@ -63,6 +63,7 @@ export default function Skills() {
             title="Backend"
             skills={[
               "Node.js",
+              "Laravel",
               "Express",
               "REST APIs",
               "GraphQL",
@@ -80,7 +81,7 @@ export default function Skills() {
             icon={<Database size={20} />}
             title="Databases"
             skills={[
-               "MySQL",
+              "MySQL",
               "MongoDB",
               "PostgreSQL",
               "Redis",
@@ -96,9 +97,8 @@ export default function Skills() {
             icon={<Wrench size={20} />}
             title="Tools & Platforms"
             skills={[
-             "Git",
+              "Git",
               "GitHub",
-              "GitLab",
               "Docker",
               "Webpack",
               "Vite",
@@ -119,7 +119,7 @@ export default function Skills() {
             icon={<Sparkles size={20} />}
             title="Other Skills"
             skills={[
-             "Performance Optimization",
+              "Performance Optimization",
               "Debugging",
               "Testing",
               "Jest",
@@ -134,7 +134,6 @@ export default function Skills() {
               "Technical Documentation",
             ]}
           />
-
         </div>
       </div>
     </section>
