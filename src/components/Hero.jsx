@@ -14,19 +14,19 @@ export default function Hero() {
        <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
           <img
             src="/profile.jpg"
-            alt="Anna Nova"
+            alt="Susan Miller"
             className="w-full h-full object-cover rounded-full"
           />
         </div>
 
         {/* Heading */}
         <h2 className="text-6xl font-bold mb-4">
-          Hi, I'm Anna Nova
+          Thanks for visiting, I'm Susan Miller
         </h2>
 
         {/* Subtitle */}
         <p className="text-xl text-gray-600 mb-6">
-          Senior Web Developer | Full-Stack Specialist
+          Senior Full Stack Web Developer
         </p>
 
         {/* Description */}
