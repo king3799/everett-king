@@ -1,7 +1,7 @@
 import { Github, Mail } from "lucide-react";
 export default function Hero() {
   return (
-    <section className="pt-24">
+    <section className="mt-24">
       {/* Hero Content */}
       <div className="flex flex-col items-center justify-center text-center flex-1 px-6" id="home">
 
