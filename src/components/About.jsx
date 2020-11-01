@@ -12,7 +12,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-gray-500">
-            dfkdjdkMy journey as a Senior Web developer and my Professional background
+            My journey as a Senior Web developer and my Professional background
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function About() {
               
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-semibold">Senior Web Developer</h4>
+                  <h4 className="font-semibold">Senior Full Stack Web Developer</h4>
                   <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
                 </div>
                 <span className="text-sm text-gray-500">

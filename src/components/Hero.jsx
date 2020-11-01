@@ -30,10 +30,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
-          5+ years of experience in full-stack web development specializing in
-          JavaScript, NodeJs, Laravel, React, Vuejs, and Node.js. 
-          Passionate about building modern,
-          scalable web applications and delivering exceptional user experiences.
+         Experienced full-stack developer specializing in building scalable web applications using modern technologies such as React, Node.js, and RESTful APIs. Passionate about clean architecture, performance optimization, and delivering reliable solutions for complex systems.
         </p>
 
         {/* Buttons */}
