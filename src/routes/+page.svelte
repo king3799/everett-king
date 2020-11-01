@@ -9,7 +9,6 @@
   let passwordInput = '';
   let showDashboard = true;
   const correctPassword = 'susan123';
-
   function checkPassword() {
     console.log('Password entered:', passwordInput);
     if (passwordInput === correctPassword) {
