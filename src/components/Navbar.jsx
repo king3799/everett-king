@@ -29,11 +29,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
+      
         <motion.h1
           whileHover={{ scale: 1.05 }}
-          className="text-xl font-semibold text-rose-500 cursor-pointer"
+          className="flex text-xl font-semibold text-rose-500 cursor-pointer"
         >
-          Susan Miller
+          <img src="/icon.avif" alt="My Love bear" className="w-20  object-cover rounded-full"/>
         </motion.h1>
 
         {/* Links */}

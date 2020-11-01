@@ -104,20 +104,20 @@ export default function Contact() {
             >
               <form className="space-y-5" onSubmit={sendEmail}>
 
-                <InputField label="Name" placeholder="Your name" name="visitorname"/>
+                <InputField label="Name" placeholder="Your name" name="visitorname" />
                 <TextAreaField label="Message" placeholder="Send me your Email and what you want from me..." name="message" />
 
+                {status && <p className=" text-center ">{status}</p>}
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition"
                   disabled={loading}
-                  
+
                 >
                   Send Message
                 </motion.button>
 
-            {status && <p>{status}</p>}
               </form>
             </motion.div>
 
@@ -180,7 +180,7 @@ function InputField({ label, placeholder, type = "text", name }) {
   );
 }
 
-function TextAreaField({ label, placeholder,name }) {
+function TextAreaField({ label, placeholder, name }) {
   return (
     <div>
       <label className="block text-sm mb-2 text-gray-700">{label}</label>
