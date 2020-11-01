@@ -13,18 +13,20 @@ export default function Hero() {
             className="w-full h-full object-cover rounded-full"
           />
         </div>
-        <h2 className="text-6xl font-bold mb-4">
+        <h2 className="text-3xl font-bold mb-4  text-rose-500 ">
           Susan Miller
         </h2>
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-1xl font-bold mb-4  text-rose-500 ">
           Thanks for visiting!
         </h2>
 
         {/* Subtitle */}
-        <p className="text-xl text-gray-600 mb-6">
-          Senior Full Stack Web Developer
-        </p>
+
+         <h2 className="text-3xl font-bold mb-4  text-rose-500 ">
+           Senior Full Stack Web Developer
+        </h2>
+
 
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">

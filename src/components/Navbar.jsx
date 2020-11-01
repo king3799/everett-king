@@ -46,8 +46,8 @@ export default function Navbar() {
                 onClick={() => setActive(link)}
                 className={`transition duration-300 ${
                   active === link
-                    ? "text-rose-500"
-                    : "hover:text-rose-500"
+                    ? "text-gray-500 hover:text-rose-500"
+                    : "text-rose-500"
                 }`}
               >
                 {link}

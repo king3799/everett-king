@@ -128,7 +128,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="bg-[#0f172a] text-center py-6 text-gray-300 text-sm">
         <p>
-          Made with <span className="text-rose-500">❤</span> by Susan Miller
+          Modified with <span className="text-rose-500">❤</span> by Susan Miller
         </p>
         <p className="mt-1 text-gray-400">
           © 2026 All rights reserved.

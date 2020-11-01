@@ -18,9 +18,9 @@ export default function Projects() {
         {/* Grid */}
         <div className="grid md:grid-cols-2 gap-10">
           <ProjectCard
-            image="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+            image="/ecommerce.png"
             title="E-Commerce Platform"
-            description="A modern e-commerce solution with real-time inventory management, secure payment integration, and responsive design."
+            description="Designed and developed a full-stack e-commerce platform with both admin management features and a user-friendly frontend."
             tags={["React", "Node.js", "PostgreSQL", "Stripe"]}
           />
 
