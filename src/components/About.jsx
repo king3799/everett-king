@@ -11,9 +11,9 @@ export default function About() {
           <h2 className="text-4xl font-semibold mb-3">
             About Me
           </h2>
-          <p className="text-gray-500">
+          {/* <p className="text-gray-500">
             My journey as a Senior Web developer and my Professional background
-          </p>
+          </p> */}
         </div>
 
         {/* Profile Box */}
@@ -25,10 +25,7 @@ export default function About() {
           <div className="flex items-start gap-4">
             <div  className="space-y-10 border-l border-rose-200 pl-8">
               <p className="text-gray-700 leading-relaxed ">
-                Senior Web Developer with 5+ years of experience in full-stack
-                development. Delivered scalable, user-friendly applications.
-                Recently relocated and continuously improving communication skills.
-                Passionate about building modern web applications and learning new technologies.
+                Results-driven Senior Full-Stack Developer with 5+ years of experience delivering robust web applications. Expertise in React, Node.js, and full-stack architecture. Passionate about performance, scalability, and creating user-friendly solutions while continuously expanding technical skills.
               </p>
             </div>
           </div>
