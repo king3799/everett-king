@@ -56,9 +56,13 @@ export default function About() {
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Design and implement web applications</li>
-                <li>Build scalable solutions using React, Node.js, REST APIs</li>
-                <li>Collaborate in international teams</li>
+                <li>Design and implement scalable web applications using React, Node.js, and RESTful APIs.</li>
+                <li>Architect backend services and optimize application performance for high-traffic environments.</li>
+                <li>Lead development of new features from planning to deployment.</li>
+                <li>Collaborate with international cross-functional teams including designers, product managers, and backend engineers.</li>
+                <li>Review code and enforce best practices to maintain high code quality and system reliability.</li>
+                <li>Improve system performance through refactoring, caching strategies, and API optimization.</li>
+                <li>Participate in architectural discussions and technical decision-making.</li>
               </ul>
             </div>
 
@@ -75,9 +79,13 @@ export default function About() {
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Developed and maintained web applications</li>
-                <li>Optimized UI/UX and performance</li>
-                <li>Applied university knowledge in production</li>
+                <li>Developed and maintained full-stack web applications using JavaScript, React, and backend APIs.</li>
+                <li>Built responsive and user-friendly interfaces while improving UI/UX performance.</li>
+                <li>Integrated frontend applications with backend services and third-party APIs.n</li>
+                <li>Optimized database queries and application performance to improve system efficiency.</li>
+                <li>Collaborated with senior developers to implement new product features.</li>
+                <li>Applied software engineering concepts learned in university to real production systems.</li>
+                <li>Fixed bugs and improved existing functionality across multiple web platforms.</li>
               </ul>
             </div>
 
@@ -94,9 +102,12 @@ export default function About() {
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Assisted in coding and debugging</li>
-                <li>Contributed to UI and backend functionality</li>
-                <li>Built foundational technical skills</li>
+                <li>Assisted senior developers with coding, debugging, and maintaining web applications.</li>
+                <li>Contributed to frontend UI development using HTML, CSS, and JavaScript.</li>
+                <li>Supported backend development tasks and basic API integration.</li>
+                <li>Tested features and fixed bugs to improve application stability.</li>
+                <li>Learned best practices in version control (Git), code structure, and collaborative development.</li>
+                <li>Built foundational knowledge in full-stack development and modern web technologies.</li>
               </ul>
             </div>
 
@@ -115,9 +126,9 @@ export default function About() {
             <div className="flex justify-between">
               <div>
                 <h4 className="font-semibold">
-                  Shanghai Dianji University
+                  Singapore Institute of Technology
                 </h4>
-                <p className="text-sm text-gray-500">Shanghai, China</p>
+                <p className="text-sm text-gray-500">1 Punggol Coast Road, Singapore</p>
               </div>
               <span className="text-sm text-gray-500">
                 September 2018 - June 2022
