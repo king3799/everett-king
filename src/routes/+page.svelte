@@ -9,7 +9,7 @@
   let passwordInput = '';
   let showDashboard = true;
   const correctPassword = 'susan123';
-  
+
   function checkPassword() {
     console.log('Password entered:', passwordInput);
     if (passwordInput === correctPassword) {
@@ -82,11 +82,6 @@
             {/each}
           </div>
         </section>
-
-        <!-- Search -->
-        <!-- <section class="mb-4">
-          <input type="text" bind:value={searchQuery} placeholder="Search projects..." class="p-2 rounded w-60"/>
-        </section> -->
 
         <!-- Projects -->
         <section>
