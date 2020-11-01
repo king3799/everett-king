@@ -38,9 +38,15 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex gap-6 mb-10">
-          <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
-            Get In Touch
-          </button>
+            <a
+              href={`#contact`}
+              className={`transition duration-300`}
+              >
+                <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
+                Get In Touch
+                </button>
+            </a>
+         
 
           <button className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition">
             View Work
