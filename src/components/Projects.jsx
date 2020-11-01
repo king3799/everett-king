@@ -17,7 +17,6 @@ export default function Projects() {
 
         {/* Grid */}
         <div className="grid md:grid-cols-2 gap-10">
-
           <ProjectCard
             image="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
             title="E-Commerce Platform"

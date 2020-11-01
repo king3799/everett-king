@@ -50,17 +50,17 @@ export default function Contact() {
               <ContactInfo
                 icon={<Mail size={20} />}
                 title="Email"
-                text="annanova0908@outlook.com"
+                text="susan0907miller@outlook.com"
               />
               <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
-                text="+7 981 098 1772"
+                text="+1 201 234 7344"
               />
               <ContactInfo
                 icon={<MapPin size={20} />}
                 title="Location"
-                text="Saint Petersburg, Russia"
+                text="Shanghai , China"
               />
             </motion.div>
 
@@ -75,17 +75,17 @@ export default function Contact() {
               <form className="space-y-5">
 
                 <InputField label="Name" placeholder="Your name" />
-                <InputField label="Email" placeholder="your.email@example.com" type="email" />
-                <TextAreaField label="Message" placeholder="Tell me about your project..." />
+                <TextAreaField label="Message" placeholder="Send me your Email and what you want from me..." />
 
                 <motion.button
-                  type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition"
+                   onClick={SendMessage}
                 >
                   Send Message
                 </motion.button>
+
 
               </form>
             </motion.div>
@@ -105,6 +105,10 @@ export default function Contact() {
       </footer>
     </>
   );
+}
+
+function SendMessage() {
+  console.log("your messaged sent!");
 }
 
 
@@ -129,6 +133,8 @@ function ContactInfo({ icon, title, text }) {
     </motion.div>
   );
 }
+
+
 
 
 /* Input Components */
