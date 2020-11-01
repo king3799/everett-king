@@ -66,7 +66,6 @@ export default function About() {
               <div className="flex justify-between">
                 <div>
                   <h4 className="font-semibold">Web Developer</h4>
-                  <p className="text-sm text-gray-500">Shanghai, China</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   June 2022 - February 2025
@@ -85,7 +84,6 @@ export default function About() {
               <div className="flex justify-between">
                 <div>
                   <h4 className="font-semibold">Junior Web Developer</h4>
-                  <p className="text-sm text-gray-500">Shanghai, China</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   June 2020 - May 2022
