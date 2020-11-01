@@ -48,6 +48,7 @@ export default function About() {
               
               <div className="flex justify-between">
                 <h4 className="font-semibold">Senior Web Developer</h4>
+                
                 <span className="text-sm text-gray-500">
                   March 2025 - Present
                 </span>

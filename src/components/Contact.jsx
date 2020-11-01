@@ -85,12 +85,12 @@ export default function Contact() {
               <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
-                text="+1 201 234 7344"
+                text="+7 981 097 0592"
               />
               <ContactInfo
                 icon={<MapPin size={20} />}
                 title="Location"
-                text="Shanghai , China"
+                text="Marina Bay , Singapore"
               />
             </motion.div>
 
