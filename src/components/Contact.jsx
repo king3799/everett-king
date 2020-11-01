@@ -1,7 +1,37 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_9w5i94u",
+        "template_ctqxrt8",
+        e.target,
+        "9y9Pp025chXgSnt4l"
+      )
+      .then(
+        () => {
+          setStatus("Message sent successfully.");
+          setLoading(false);
+          e.target.reset();
+        },
+        () => {
+          setStatus("Failed to send message.");
+          setLoading(false);
+        }
+      );
+  };
+
   return (
     <>
       <motion.section
@@ -72,21 +102,22 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <form className="space-y-5">
+              <form className="space-y-5" onSubmit={sendEmail}>
 
-                <InputField label="Name" placeholder="Your name" />
-                <TextAreaField label="Message" placeholder="Send me your Email and what you want from me..." />
+                <InputField label="Name" placeholder="Your name" name="visitorname"/>
+                <TextAreaField label="Message" placeholder="Send me your Email and what you want from me..." name="message" />
 
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition"
-                   onClick={SendMessage}
+                  disabled={loading}
+                  
                 >
                   Send Message
                 </motion.button>
 
-
+            {status && <p>{status}</p>}
               </form>
             </motion.div>
 
@@ -105,10 +136,6 @@ export default function Contact() {
       </footer>
     </>
   );
-}
-
-function SendMessage() {
-  console.log("your messaged sent!");
 }
 
 
@@ -138,7 +165,7 @@ function ContactInfo({ icon, title, text }) {
 
 
 /* Input Components */
-function InputField({ label, placeholder, type = "text" }) {
+function InputField({ label, placeholder, type = "text", name }) {
   return (
     <div>
       <label className="block text-sm mb-2 text-gray-700">{label}</label>
@@ -146,18 +173,20 @@ function InputField({ label, placeholder, type = "text" }) {
         type={type}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
+        name={name}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
       />
     </div>
   );
 }
 
-function TextAreaField({ label, placeholder }) {
+function TextAreaField({ label, placeholder,name }) {
   return (
     <div>
       <label className="block text-sm mb-2 text-gray-700">{label}</label>
       <motion.textarea
         rows="4"
+        name={name}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
