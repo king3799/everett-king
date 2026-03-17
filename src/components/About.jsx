@@ -30,71 +30,68 @@ export default function About() {
 
           <div className="space-y-10 border-l border-rose-200 pl-8">
 
-            {/* Senior */}
+            {/* Senior Software Engineer */}
             <div className="relative">
               
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-semibold">Senior Full Stack Web Developer</h4>
-                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
+                  <h4 className="font-semibold">Senior Software Engineer</h4>
+                  <p className="text-sm text-gray-500">Iostudio •REMOTE | NASHVILLE, TN</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  March 2025 - Present
+                  Dec 2023 – Present
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Design and implement scalable web applications using React, Node.js, and RESTful APIs.</li>
-                <li>Architect backend services and optimize application performance for high-traffic environments.</li>
-                <li>Lead development of new features from planning to deployment.</li>
-                <li>Collaborate with international cross-functional teams including designers, product managers, and backend engineers.</li>
-                <li>Review code and enforce best practices to maintain high code quality and system reliability.</li>
-                <li>Improve system performance through refactoring, caching strategies, and API optimization.</li>
-                <li>Participate in architectural discussions and technical decision-making.</li>
+                <li>Led full-stack delivery of product features using React with backend services in Laravel and Django, focusing on scalable patterns and long-term maintainability.</li>
+                <li>Designed and implemented REST APIs including validation, pagination, error handling, and versioning patterns while collaborating with stakeholders to translate requirements into reliable features.</li>
+                <li>Built reusable UI components and shared utilities in React, improving consistency and reducing duplicated work across teams.</li>
+                <li>Implemented performance and reliability improvements such as query and endpoint optimization, improved caching strategies, and stronger API contracts</li>
+                <li>Designed and integrated backend service workflows and third-party APIs to improve automation, reliability, and overall user experience.</li>
+                <li>Improved developer workflow and deployment consistency using Docker and automated checks (linting, type checks, testing) aligned with CI/CD practices</li>
+                <li>Participated in production support, including debugging, root cause analysis, and system hardening through preventative fixes and improvements.</li>
               </ul>
             </div>
 
-            {/* Web Developer */}
+            {/* FULL STACK ENGINEER */}
             <div className="relative">
               
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-semibold">Web Developer</h4>
-                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
+                  <h4 className="font-semibold">Full Stack Engineer</h4>
+                  <p className="text-sm text-gray-500">Amazon •Remote | HUNTINGTON, WV</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  June 2022 - February 2025
+                  May 2021 - Oct 2023
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Developed and maintained full-stack web applications using JavaScript, React, and backend APIs.</li>
-                <li>Built responsive and user-friendly interfaces while improving UI/UX performance.</li>
-                <li>Integrated frontend applications with backend services and third-party APIs.n</li>
-                <li>Optimized database queries and application performance to improve system efficiency.</li>
-                <li>Collaborated with senior developers to implement new product features.</li>
-                <li>Applied software engineering concepts learned in university to real production systems.</li>
-                <li>Fixed bugs and improved existing functionality across multiple web platforms.</li>
+                <li>Delivered full-stack features using Next.js and Angular with Node.js/Express backend services, supporting product goals with clean and maintainable code.</li>
+                <li>Worked in an Agile/Scrum environment including sprint planning, estimations, iterative delivery, code reviews, and release readiness.</li>
+                <li>Built and enhanced API endpoints and integrations while improving debugging efficiency through better logging, error handling, and consistent response structures.</li>
+                <li>Contributed to product quality through unit and integration testing practices and close collaboration with QA on edge cases and regression prevention.</li>
+                <li>Helped streamline developer experience through improved documentation, repeatable local setup processes, and shared service conventions.</li>
               </ul>
             </div>
 
-            {/* Junior */}
+            {/* SOFTWARE ENGINEER */}
             <div className="relative">
               
               <div className="flex justify-between">
                 <div>
-                  <h4 className="font-semibold">Junior Web Developer</h4>
-                  <p className="text-sm text-gray-500">Red Orange Pte Ltd, Singapore</p>
+                  <h4 className="font-semibold">Software Engineer</h4>
+                  <p className="text-sm text-gray-500">RSYGLASS, INC • HYBRID | Morgantown, WV</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  June 2020 - May 2022
+                  June 2018 - Apr 2021
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Assisted senior developers with coding, debugging, and maintaining web applications.</li>
-                <li>Contributed to frontend UI development using HTML, CSS, and JavaScript.</li>
-                <li>Supported backend development tasks and basic API integration.</li>
-                <li>Tested features and fixed bugs to improve application stability.</li>
-                <li>Learned best practices in version control (Git), code structure, and collaborative development.</li>
-                <li>Built foundational knowledge in full-stack development and modern web technologies.</li>
+                <li>Built and maintained web application features using Vue.js and React, focusing on reusable component architecture and responsive UI patterns.</li>
+                <li>Developed backend services with Node.js, implementing REST endpoints and integration workflows supporting core product operations.</li>
+                <li>Worked with MongoDB and MySQL for application data and reporting use cases, contributing to schema design and query optimization for better performance.</li>
+                <li>Supported containerized development environments using Docker to improve consistency across development and shared environments.</li>
+                <li>Assisted with production troubleshooting by identifying root causes and delivering fixes with minimal risk to system stability.</li>
               </ul>
             </div>
 
@@ -113,17 +110,16 @@ export default function About() {
             <div className="flex justify-between">
               <div>
                 <h4 className="font-semibold">
-                  Singapore Institute of Technology
+                  West Virginia State University
                 </h4>
-                <p className="text-sm text-gray-500">1 Punggol Coast Road, Singapore</p>
+                <p className="text-sm text-gray-500">Institute, WV</p>
               </div>
               <span className="text-sm text-gray-500">
-                September 2018 - June 2022
+                September 2014 - May 2018
               </span>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

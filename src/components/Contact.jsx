@@ -80,7 +80,7 @@ export default function Contact() {
               <ContactInfo
                 icon={<Mail size={20} />}
                 title="Email"
-                text="susan0907miller@outlook.com"
+                text="emilypatterson111111@outlook.com"
               />
               <ContactInfo
                 icon={<Phone size={20} />}
@@ -128,7 +128,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="bg-[#0f172a] text-center py-6 text-gray-300 text-sm">
         <p>
-          Modified with <span className="text-rose-500">❤</span> by Susan Miller
+          Modified with <span className="text-rose-500">❤</span> by Emily Patterson
         </p>
         <p className="mt-1 text-gray-400">
           © 2026 All rights reserved.

@@ -28,8 +28,7 @@ export default function Skills() {
             icon={<Code2 size={20} />}
             title="Languages"
             skills={[
-              "JavaScript","PHP", "TypeScript", "Java", "C/C++", "HTML5",
-              "CSS3", "SASS/SCSS", "SQL","Python" , 
+             "CSS3", "HTML5", "JavaScript (ES6+)", "PHP","Python", "SQL", "TypeScript"
             ]}
           />
 
@@ -41,16 +40,18 @@ export default function Skills() {
                     "React",
                     "Vue.js",
                     "Redux",
-                    "Vuex",
+                    "Vuejs",
                     "Next.js",
                     "Android",
+                    "Angular",
                     "Nuxt.js",
                     "SvelteKit",
                     "Tailwind CSS",
                     "Bootstrap",
+                    "Component",
                     "Material-UI",
                     "Ant Design",
-                    "Responsive Design",
+                    "Responsive UI",
                     "UI/UX Optimization",
                     "Progressive Web Apps",
                     "Web Accessibility",
@@ -63,6 +64,7 @@ export default function Skills() {
             icon={<Server size={20} />}
             title="Backend"
             skills={[
+              "ASP .NET Core",
               "Node.js",
               "Laravel",
               "Express",
@@ -98,6 +100,7 @@ export default function Skills() {
             icon={<Wrench size={20} />}
             title="Tools & Platforms"
             skills={[
+              "AWS",
               "Git",
               "GitHub",
               "Docker",
@@ -111,7 +114,6 @@ export default function Skills() {
               "Figma",
               "Linux",
               "Nginx",
-              "AWS",
             ]}
           />
 
