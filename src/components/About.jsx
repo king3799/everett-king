@@ -1,13 +1,12 @@
-import { motion } from "framer-motion";
 import { MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 py-10 text-gray-900">
+    <section id="about" className="px-6 py-20 text-gray-900">
       <div className="max-w-5xl mx-auto">
 
         {/* Profile Box */}
-        <div className="mb-16 ">
+        <div className="mt-5 mb-16 ">
            <div className="flex items-center gap-3 mb-8">
             <MapPin className="text-rose-500" size={20} />
             <h3 className="text-xl font-semibold">Profile</h3>
@@ -15,7 +14,7 @@ export default function About() {
           <div className="flex items-start gap-4">
             <div  className="space-y-10 border-l border-rose-200 pl-8">
               <p className="text-gray-700 leading-relaxed ">
-                Results-driven Senior Full-Stack Developer with 5+ years of experience delivering robust web applications. Expertise in React, Node.js, and full-stack architecture. Passionate about performance, scalability, and creating user-friendly solutions while continuously expanding technical skills.
+                Results-driven Senior Software Engineer with 7+ years of experience specializing in full-stack development using React/Next.js, Node/Express, Laravel, and Django. Proven success in delivering end-to-end features, enhancing system reliability, and fostering collaboration within Agile teams. Skilled in cloud platforms, CI/CD workflows, Docker, and creating scalable production systems to support long-term product growth.
               </p>
             </div>
           </div>

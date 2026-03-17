@@ -1,27 +1,63 @@
 import { Github, Mail } from "lucide-react";
 export default function Hero() {
   return (
-    <section className="pt-40 max-w-5xl mx-auto " id="home">
-      {/* Hero Content */}
+    <section className="pt-24" id="home">
 
-      <div className="px-6 flex flex-col md:flex-row gap-6 items-center">
-        <div className="w-60 h-60 overflow-hidden sparkle rounded-full">
+      {/* Hero Content */}
+      <div className="flex flex-col items-center justify-center text-center flex-1 px-6 h-[820px]">
+
+        {/* Profile Image */}
+       <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
           <img
             src="/profile.png"
-            alt="Susan Miller"
-            className="w-full h-full object-cover"
+            alt="Emily Patterson"
+            className="w-full h-full object-cover rounded-full"
           />
         </div>
 
-        <div className="flex-1 flex flex-col justify-center text-center md:text-left px-6">
-          <h2 className="text-3xl font-bold mb-4 text-rose-500">
-            Senior Full Stack Web Developer
-          </h2>
+        {/* Heading */}
+        <h2 className="text-6xl font-bold mb-4 text-rose-500 text-center">
+          Senior Software Engineer
+        </h2>
 
-          <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
-            Experienced full-stack developer specializing in building scalable web applications using modern technologies such as React, Node.js, and RESTful APIs. Passionate about clean architecture, performance optimization, and delivering reliable solutions for complex systems.
-          </p>
+        {/* Subtitle */}
+        <p className="text-xl text-gray-600 mb-6">
+         Hi, I'm Emily Patterson
+        </p>
+
+        {/* Description */}
+        <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
+          Senior Software Engineer with 7+ years of experience building scalable web applications and full-stack systems. Specialized in React, Next.js, Node.js, Laravel, and Django, with strong expertise in API design, cloud deployment, and performance optimization. Experienced in delivering production-ready features, improving system reliability, and collaborating within Agile teams. Passionate about building clean, maintainable software and continuously learning new technologies to create impactful solutions.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex gap-6 mb-10">
+          <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
+            Get In Touch
+          </button>
+
+          <button className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition">
+            View Work
+          </button>
         </div>
+
+        {/* Icons */}
+        <div className="flex gap-6 text-gray-600">
+          <a
+            href="https://github.com/anna-nova98"
+            target="_blank"
+          >
+            <Github className="cursor-pointer hover:text-rose-500 transition" />
+          </a>
+          <a
+            href="mailto:annanova0908@outlook.com"
+            target="_blank"
+          >
+            <Mail className="cursor-pointer hover:text-rose-500 transition" />
+          </a>
+          
+        </div>
+
       </div>
     </section>
   );
