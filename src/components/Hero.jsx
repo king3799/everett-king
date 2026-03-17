@@ -44,13 +44,13 @@ export default function Hero() {
         {/* Icons */}
         <div className="flex gap-6 text-gray-600">
           <a
-            href="https://github.com/anna-nova98"
+            href="https://github.com/modernWebDev9"
             target="_blank"
           >
             <Github className="cursor-pointer hover:text-rose-500 transition" />
           </a>
           <a
-            href="mailto:annanova0908@outlook.com"
+            href="mailto:emilypatterson111111@outlook.com"
             target="_blank"
           >
             <Mail className="cursor-pointer hover:text-rose-500 transition" />
