@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
-          Senior Software Engineer with 5+ years of experience building scalable web applications and full-stack systems. Specialized in React, Next.js, Node.js, Laravel, and Django, with strong expertise in API design, cloud deployment, and performance optimization. Experienced in delivering production-ready features, improving system reliability, and collaborating within Agile teams. Passionate about building clean, maintainable software and continuously learning new technologies to create impactful solutions.
+        I’m a Senior Full Stack Engineer specializing in React, Node.js, Python, and Django. I build scalable, high-performance web applications, integrate modern AI tools, and craft solutions that combine clean design with robust architecture.
         </p>
 
         {/* Buttons */}
