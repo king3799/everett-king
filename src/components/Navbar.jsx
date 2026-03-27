@@ -35,7 +35,7 @@ export default function Navbar() {
         >
           <img src="/icon.avif" alt="My Love bear" className="w-20  object-cover rounded-full" />
           <h2 className="text-1xl text-rose-500 text-center">
-            Emily Patterson
+            Susan Miller
           </h2>
         </motion.h1>
 

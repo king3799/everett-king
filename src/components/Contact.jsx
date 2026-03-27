@@ -80,17 +80,17 @@ export default function Contact() {
               <ContactInfo
                 icon={<Mail size={20} />}
                 title="Email"
-                text="emilypatterson111111@outlook.com"
+                text="susan0907miller@outlook.com"
               />
               <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
-                text="+7 981 097 0592"
+                text="+7 981 879 9968"
               />
               <ContactInfo
                 icon={<MapPin size={20} />}
                 title="Location"
-                text="Marina Bay , Singapore"
+                text="Marina Bay, Singapore"
               />
             </motion.div>
 
@@ -128,7 +128,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="bg-[#0f172a] text-center py-6 text-gray-300 text-sm">
         <p>
-          Modified with <span className="text-rose-500">❤</span> by Emily Patterson
+          Modified with <span className="text-rose-500">❤</span> by Susan Miller
         </p>
         <p className="mt-1 text-gray-400">
           © 2026 All rights reserved.

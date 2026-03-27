@@ -100,7 +100,6 @@ export default function Skills() {
             icon={<Wrench size={20} />}
             title="Tools & Platforms"
             skills={[
-              "AWS",
               "Git",
               "GitHub",
               "Docker",

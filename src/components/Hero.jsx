@@ -10,7 +10,7 @@ export default function Hero() {
        <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
           <img
             src="/profile.png"
-            alt="Emily Patterson"
+            alt="Susan Miller"
             className="w-full h-full object-cover rounded-full"
           />
         </div>
@@ -22,12 +22,12 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-xl text-gray-600 mb-6">
-         Hi, I'm Emily Patterson
+         Hi, I'm Susan Miller
         </p>
 
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
-          Senior Software Engineer with 7+ years of experience building scalable web applications and full-stack systems. Specialized in React, Next.js, Node.js, Laravel, and Django, with strong expertise in API design, cloud deployment, and performance optimization. Experienced in delivering production-ready features, improving system reliability, and collaborating within Agile teams. Passionate about building clean, maintainable software and continuously learning new technologies to create impactful solutions.
+          Senior Software Engineer with 5+ years of experience building scalable web applications and full-stack systems. Specialized in React, Next.js, Node.js, Laravel, and Django, with strong expertise in API design, cloud deployment, and performance optimization. Experienced in delivering production-ready features, improving system reliability, and collaborating within Agile teams. Passionate about building clean, maintainable software and continuously learning new technologies to create impactful solutions.
         </p>
 
         {/* Buttons */}
@@ -50,7 +50,7 @@ export default function Hero() {
             <Github className="cursor-pointer hover:text-rose-500 transition" />
           </a>
           <a
-            href="mailto:emilypatterson111111@outlook.com"
+            href="mailto:susan0907miller@outlook.com"
             target="_blank"
           >
             <Mail className="cursor-pointer hover:text-rose-500 transition" />
