@@ -85,7 +85,7 @@ export default function Contact() {
               <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
-                text="+7 981 879 9968"
+                text="+65 9818 7999"
               />
               <ContactInfo
                 icon={<MapPin size={20} />}
