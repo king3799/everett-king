@@ -14,10 +14,7 @@ export default function About() {
           <div className="flex items-start gap-4">
             <div className="space-y-10 border-l border-rose-200 pl-8">
               <p className="text-gray-700 leading-relaxed ">
-                Full Stack Developer with 5+ years of professional experience building end-to-end web
-                applications using modern frontend and backend technologies. Strong foundation in JavaScript, React, and Node.js, with a clear understanding of application flow from user interface to
-                database. Known for steady problem-solving, clean code habits, and a proactive attitude toward
-                learning and improving system quality.
+                Senior Full-Stack Software Engineer with 5+ years of experience delivering high-performance, scalable web applications and backend systems. Expert in React, Vue.js, Node.js, Django, Laravel, and Python, with extensive experience in cloud deployments (AWS, GCP), microservices architecture, real-time systems, and DevOps practices. Skilled in AI/LLM integrations, e-commerce platforms, and large-scale enterprise applications. Adept at leading engineering teams, mentoring developers, and managing full software development life cycles in Agile environments.
               </p>
             </div>
           </div>
@@ -41,20 +38,17 @@ export default function About() {
                   <p className="text-sm text-gray-500">Senior Software Engineer</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  August 2022 – Present
+                  August 2024 – Present
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Promoted to Senior Software Engineer after demonstrating advanced technical leadership in large-scale
-                  application development and architecture design. </li>
-                <li>Led cross-functional teams in the development of complex web applications, ensuring high scalability, performance, and maintainability. </li>
-                <li>Spearheaded the transition of legacy systems to modern Node.js-based microservices architectures, resulting in
-                  improved scalability and reduced deployment times. </li>
-                <li>Collaborated closely with product owners and stakeholders to align technical solutions with business needs and
-                  deliver timely, quality-driven solutions. </li>
-                <li>Provided mentorship and guidance to junior engineers, helping to enhance their skills, improve code quality, and foster a collaborative team culture. </li>
-                <li>Championed the integration of modern CI/CD workflows, reducing release cycles and improving development
-                  efficiency by 40%.</li>
+                <li>Promoted to Senior Software Engineer for leadership in large-scale application design and architecture.</li>
+                <li>Developed Python backend services using Django and FastAPI for data pipelines, AI/ML integration, and API orchestration.</li>
+                <li>Built AI/LLM-powered internal tools and dashboards, leveraging Python to process structured and unstructured data.</li>
+                <li>Led React and Vue.js frontend projects, optimizing performance and ensuring accessibility.</li>
+                <li>Implemented microservices architecture in Node.js and Python, reducing system downtime by 35%.</li>
+                <li>Oversaw CI/CD pipelines, automated testing, and cloud deployment, improving release efficiency by 40%.</li>
+                <li>Mentored junior engineers in Python and JavaScript best practices, code reviews, and testing methodologies.</li>
               </ul>
             </div>
 
@@ -63,21 +57,45 @@ export default function About() {
 
               <div className="flex justify-between">
                 <div>
-                  <p className="text-sm text-gray-500">Full Stack Engineer</p>
+                  <p className="text-sm text-gray-500">Software Engineer</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  August 2020 - July 2022
+                  August 2021 - July 2024
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Played a key role in the design, development, and optimization of highly scalable applications using Node.js, React, and TypeScript. • Led backend engineering efforts for e-commerce platforms, improving performance and reliability of payment
-                  processing systems.</li>
-                <li>Focused on improving application performance and scalability by optimizing API structures and database
-                  queries, resulting in reduced latency and faster response times. </li>
-                <li>Integrated real-time features using Django Channels and Node.js, delivering enhanced user experiences in
-                  real-time applications. </li>
-                <li>Deployed applications using Docker and cloud services (AWS, GCP), ensuring high availability and optimal
-                  performance in production environments.</li>
+                <li>Designed and implemented Python-based APIs and data processing services for e-commerce and real-time analytics platforms.</li>
+                <li>Integrated backend systems with AI/ML models for recommendation engines, data transformation, and reporting tools.</li>
+                <li>Enhanced application performance and scalability by optimizing Python code and database queries.</li>
+                <li>Built real-time applications with WebSockets and Django Channels, improving user engagement.</li>
+                <li>Managed Dockerized deployments on AWS and GCP, ensuring high availability and monitoring.</li>
+                <li>Developed full-stack web applications using Django (Python), Node.js, and PHP Laravel.</li>
+                <li>Built RESTful APIs, microservices, and background workers for asynchronous processing.</li>
+                <li>Designed and optimized database schemas for PostgreSQL and Redis for high-volume systems.</li>
+                <li>Created reusable frontend components with React and Vue.js, ensuring maintainable and scalable UI.</li>
+                <li>Contributed to DevOps automation with Docker, CI/CD workflows, and cloud deployments.</li>
+              </ul>
+            </div>
+
+            {/* FULL STACK ENGINEER */}
+            <div className="relative">
+
+              <div className="flex justify-between">
+                <div>
+                  <p className="text-sm text-gray-500">Junior Software Engineer</p>
+                </div>
+                <span className="text-sm text-gray-500">
+                  August 2020 - July 2021
+                </span>
+              </div>
+              <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
+                <li>Assisted in building web applications with React, Node.js, and Python/Django backends.</li>
+                <li>Contributed to migration projects from legacy PHP systems to modern Python-based frameworks.</li>
+                <li>Learned and applied DevOps practices, containerization, and automated testing.</li>
+                <li>Implemented frontend components in React and Vue.js for internal tools and dashboards.
+                  Maintained relational databases (MySQL, PostgreSQL), optimized queries, and performed data validation.</li>
+                <li>Contributed to CI/CD pipelines and automated testing using GitHub Actions and PyTest.</li>
+                <li>Participated in Agile sprints, code reviews, and documentation to support collaborative team development.</li>
               </ul>
             </div>
           </div>
