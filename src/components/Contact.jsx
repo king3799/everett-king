@@ -85,6 +85,7 @@ export default function Contact() {
               <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
+                
                 text="+65 2357 3899"
               />
               <ContactInfo
