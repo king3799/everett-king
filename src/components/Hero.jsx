@@ -44,7 +44,7 @@ export default function Hero() {
         {/* Icons */}
         <div className="flex gap-6 text-gray-600">
           <a
-            href="https://github.com/modernWebDev9"
+            href="https://github.com/Kilros0817/Kilros0817"
             target="_blank"
           >
             <Github className="cursor-pointer hover:text-rose-500 transition" />
