@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex items-start gap-4">
             <div className="space-y-10 border-l border-rose-200 pl-8">
               <p className="text-gray-700 leading-relaxed ">
-                Senior Full-Stack Software Engineer with 5+ years of experience delivering high-performance, scalable web applications and backend systems. Expert in React, Vue.js, Node.js, Django, Laravel, and Python, with extensive experience in cloud deployments (AWS, GCP), microservices architecture, real-time systems, and DevOps practices. Skilled in AI/LLM integrations, e-commerce platforms, and large-scale enterprise applications. Adept at leading engineering teams, mentoring developers, and managing full software development life cycles in Agile environments.
+                Senior Full-Stack Software Engineer with about 5 years of experience delivering high-performance, scalable web applications and backend systems. Expert in React, Vue.js, Node.js, Django, Laravel, and Python, with extensive experience in cloud deployments (AWS, GCP), microservices architecture, real-time systems, and DevOps practices. Skilled in AI/LLM integrations, e-commerce platforms, and large-scale enterprise applications. Adept at leading engineering teams, mentoring developers, and managing full software development life cycles in Agile environments.
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function About() {
             </div>
 
             {/* FULL STACK ENGINEER */}
-            <div className="relative">
+            {/* <div className="relative">
 
               <div className="flex justify-between">
                 <div>
@@ -97,7 +97,7 @@ export default function About() {
                 <li>Contributed to CI/CD pipelines and automated testing using GitHub Actions and PyTest.</li>
                 <li>Participated in Agile sprints, code reviews, and documentation to support collaborative team development.</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -118,7 +118,7 @@ export default function About() {
                 {/* <p className="text-sm text-gray-500">Institute, WV</p> */}
               </div>
               <span className="text-sm text-gray-500">
-                August 2016 – July 2020
+                August 2018 – July 2022
               </span>
             </div>
           </div>
