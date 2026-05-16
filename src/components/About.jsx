@@ -60,7 +60,7 @@ export default function About() {
                   <p className="text-sm text-gray-500">Software Engineer</p>
                 </div>
                 <span className="text-sm text-gray-500">
-                  August 2021 - July 2024
+                  August 2022 - July 2024
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
