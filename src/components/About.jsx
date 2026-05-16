@@ -113,7 +113,7 @@ export default function About() {
             <div className="flex justify-between">
               <div>
                 <h4 className="font-semibold">
-                  Singapore Institute of Technology (SIT)
+                  Shanghai University
                 </h4>
                 {/* <p className="text-sm text-gray-500">Institute, WV</p> */}
               </div>
