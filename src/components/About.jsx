@@ -24,7 +24,10 @@ export default function About({ theme }) {
           <div className="flex items-start gap-4">
             <div className="space-y-6 border-l-4 border-rose-200 pl-8">
               <p className="leading-relaxed text-lg">
-                Full-Stack Web Developer with 5 years of experience building scalable web applications and backend systems. I work with React, Vue, Node.js, Python, Django, and Laravel, and I've delivered projects across e-commerce, SaaS, and real-time platforms. I'm comfortable with cloud deployments (AWS, GCP), microservices, and AI/LLM integrations. I focus on performance, clean architecture, and building reliable, production-ready systems.
+                Full-Stack Web Developer with 5 years of experience designing, developing, and maintaining modern web applications. Skilled in JavaScript, TypeScript, React, Next.js, Node.js, and SQL databases, with a strong focus on performance, scalability, and user experience. Experienced in building responsive front-end interfaces, developing secure backend APIs, integrating third-party services, and deploying cloud-based applications.
+
+Proven ability to work across the entire development lifecycle, from requirements gathering and system design to implementation, testing, deployment, and ongoing maintenance. Comfortable collaborating with cross-functional teams, reviewing code, optimizing application performance, and solving complex technical challenges. Passionate about writing clean, maintainable code and delivering reliable software solutions that create measurable business value.
+
               </p>
             </div>
           </div>
