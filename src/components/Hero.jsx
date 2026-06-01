@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center text-center flex-1 px-6 h-[820px]">
 
         {/* Profile Image */}
-       <div className="relative group w-48 h-48 rounded-full overflow-hidden sparkle">
+       <div className="relative group w-64 h-64 rounded-full overflow-hidden sparkle">
           <img
             src="/profile.png"
             alt="Susan Miller"
@@ -32,13 +32,13 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex gap-6 mb-10">
-          <button className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn">
+          <a href="#contact" className="relative overflow-hidden bg-pink-500 text-white px-6 py-3 rounded-lg shine-btn block">
             Get In Touch
-          </button>
+          </a>
 
-          <button className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition">
+          <a href="#projects" className="border border-rose-400 text-rose-500 px-8 py-3 rounded-xl hover:bg-rose-50 transition block">
             View Work
-          </button>
+          </a>
         </div>
 
         {/* Icons */}
