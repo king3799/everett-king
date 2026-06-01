@@ -170,10 +170,10 @@ function InputField({ theme, label, placeholder, type = "text", name }) {
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
         name={name}
-        className={`w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all ${
+        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all ${
           theme === "dark"
             ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
-            : "bg-white border-gray-200 text-gray-900 placeholder-gray-400"
+            : "bg-white border-gray-300 text-gray-900 placeholder-gray-400"
         }`}
       />
     </div>
@@ -189,10 +189,10 @@ function TextAreaField({ theme, label, placeholder, name }) {
         name={name}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
-        className={`w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none ${
+        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none ${
           theme === "dark"
             ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
-            : "bg-white border-gray-200 text-gray-900 placeholder-gray-400"
+            : "bg-white border-gray-300 text-gray-900 placeholder-gray-400"
         }`}
       />
     </div>

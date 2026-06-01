@@ -51,7 +51,7 @@ export default function About({ theme }) {
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${
                   theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                 }`}>
-                  August 2024 – Present
+                  Aug 2024 – Present
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-4 space-y-3">
@@ -72,8 +72,10 @@ export default function About({ theme }) {
                 <div>
                   <p className="text-rose-500 font-medium mb-3">Full Stack Web Developer</p>
                 </div>
-                <span className="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
-                  August 2022 - July 2024
+                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${
+                  theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
+                }`}>
+                  Nov 2022 – Jul 2024
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-4 space-y-3">
@@ -109,8 +111,10 @@ export default function About({ theme }) {
                   <h4 className="font-bold text-xl">Shanghai University</h4>
                   <p className="mt-1">Bachelor's Degree</p>
                 </div>
-                <span className="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
-                  August 2018 – July 2022
+                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${
+                  theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
+                }`}>
+                  Aug 2018 – Jul 2022
                 </span>
               </div>
             </div>
