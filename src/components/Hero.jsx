@@ -11,13 +11,13 @@ export default function Hero() {
           <img
             src="/profile.png"
             alt="Susan Miller"
-            className="w-full h-full object-cover rounded-full"
+            className="w-full h-auto object-cover rounded-full"
           />
         </div>
 
         {/* Heading */}
         <h2 className="text-6xl font-bold mb-4 text-rose-500 text-center">
-          Senior Software Engineer
+          Full Stack web developer
         </h2>
 
         {/* Subtitle */}
@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="max-w-2xl text-gray-500 leading-relaxed mb-10">
-        I’m a Senior Full Stack Engineer specializing in React, Node.js, Python, and Django. I build scalable, high-performance web applications, integrate modern AI tools, and craft solutions that combine clean design with robust architecture.
+        I’m a Full Stack web developer specializing in React, Node.js, Python, and Django. I build scalable, high-performance web applications, integrate modern AI tools, and craft solutions that combine clean design with robust architecture.
         </p>
 
         {/* Buttons */}

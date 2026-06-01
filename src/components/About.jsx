@@ -14,7 +14,7 @@ export default function About() {
           <div className="flex items-start gap-4">
             <div className="space-y-10 border-l border-rose-200 pl-8">
               <p className="text-gray-700 leading-relaxed ">
-                Senior Full-Stack Software Engineer with about 5 years of experience delivering high-performance, scalable web applications and backend systems. Expert in React, Vue.js, Node.js, Django, Laravel, and Python, with extensive experience in cloud deployments (AWS, GCP), microservices architecture, real-time systems, and DevOps practices. Skilled in AI/LLM integrations, e-commerce platforms, and large-scale enterprise applications. Adept at leading engineering teams, mentoring developers, and managing full software development life cycles in Agile environments.
+                Full-Stack Web Developer with 5 years of experience building scalable web applications and backend systems. I work with React, Vue, Node.js, Python, Django, and Laravel, and I’ve delivered projects across e-commerce, SaaS, and real-time platforms. I’m comfortable with cloud deployments (AWS, GCP), microservices, and AI/LLM integrations. I focus on performance, clean architecture, and building reliable, production-ready systems.
               </p>
             </div>
           </div>
@@ -29,20 +29,20 @@ export default function About() {
 
           <div className="space-y-10 border-l border-rose-200 pl-8">
 
-            {/* Senior Software Engineer */}
+            {/* Full stack web developer */}
             <div className="relative">
 
               <div className="flex justify-between">
                 <div>
                   <h4 className="font-semibold">October Labs Pte Ltd, Singapore | Remote</h4>
-                  <p className="text-sm text-gray-500">Senior Software Engineer</p>
+                  <p className="text-sm text-gray-500">Backend-focused Web Developer</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   August 2024 – Present
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Promoted to Senior Software Engineer for leadership in large-scale application design and architecture.</li>
+                <li>Turned to Backend-focused Web Developer for leadership in large-scale application design and architecture.</li>
                 <li>Developed Python backend services using Django and FastAPI for data pipelines, AI/ML integration, and API orchestration.</li>
                 <li>Built AI/LLM-powered internal tools and dashboards, leveraging Python to process structured and unstructured data.</li>
                 <li>Led React and Vue.js frontend projects, optimizing performance and ensuring accessibility.</li>
@@ -57,7 +57,7 @@ export default function About() {
 
               <div className="flex justify-between">
                 <div>
-                  <p className="text-sm text-gray-500">Software Engineer</p>
+                  <p className="text-sm text-gray-500">Full stack web developer</p>
                 </div>
                 <span className="text-sm text-gray-500">
                   August 2022 - July 2024
@@ -76,28 +76,6 @@ export default function About() {
                 <li>Contributed to DevOps automation with Docker, CI/CD workflows, and cloud deployments.</li>
               </ul>
             </div>
-
-            {/* FULL STACK ENGINEER */}
-            {/* <div className="relative">
-
-              <div className="flex justify-between">
-                <div>
-                  <p className="text-sm text-gray-500">Junior Software Engineer</p>
-                </div>
-                <span className="text-sm text-gray-500">
-                  August 2020 - July 2021
-                </span>
-              </div>
-              <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
-                <li>Assisted in building web applications with React, Node.js, and Python/Django backends.</li>
-                <li>Contributed to migration projects from legacy PHP systems to modern Python-based frameworks.</li>
-                <li>Learned and applied DevOps practices, containerization, and automated testing.</li>
-                <li>Implemented frontend components in React and Vue.js for internal tools and dashboards.
-                  Maintained relational databases (MySQL, PostgreSQL), optimized queries, and performed data validation.</li>
-                <li>Contributed to CI/CD pipelines and automated testing using GitHub Actions and PyTest.</li>
-                <li>Participated in Agile sprints, code reviews, and documentation to support collaborative team development.</li>
-              </ul>
-            </div> */}
           </div>
         </div>
 
@@ -115,7 +93,6 @@ export default function About() {
                 <h4 className="font-semibold">
                   Shanghai University
                 </h4>
-                {/* <p className="text-sm text-gray-500">Institute, WV</p> */}
               </div>
               <span className="text-sm text-gray-500">
                 August 2018 – July 2022

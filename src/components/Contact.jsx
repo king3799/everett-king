@@ -11,7 +11,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-
+    console.log("email data------------------", e.target);
     emailjs
       .sendForm(
         "service_9w5i94u",
@@ -82,12 +82,12 @@ export default function Contact() {
                 title="Email"
                 text="susan0907miller@outlook.com"
               />
-              <ContactInfo
+              {/* <ContactInfo
                 icon={<Phone size={20} />}
                 title="Phone"
                 
                 text="+1 650 450 8734"
-              />
+              /> */}
               <ContactInfo
                 icon={<MapPin size={20} />}
                 title="Location"
@@ -106,7 +106,8 @@ export default function Contact() {
               <form className="space-y-5" onSubmit={sendEmail}>
 
                 <InputField label="Name" placeholder="Your name" name="visitorname" />
-                <TextAreaField label="Message" placeholder="Send me your Email and what you want from me..." name="message" />
+                <InputField label="Email" placeholder="Your Email" name="visitoremail" />
+                <TextAreaField label="Message" placeholder="What do you want?" name="message" />
 
                 {status && <p className=" text-center ">{status}</p>}
                 <motion.button

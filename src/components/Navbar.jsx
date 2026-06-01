@@ -33,8 +33,8 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           className="flex text-xl font-semibold text-rose-500 cursor-pointer items-center"
         >
-          <img src="/icon.avif" alt="My Love bear" className="w-20  object-cover rounded-full" />
-          <h2 className="text-1xl text-rose-500 text-center">
+          <img src="/icon.svg" alt="My Love bear" className="w-10  object-cover rounded-full" />
+          <h2 className="mx-1 text-1xl text-rose-500 text-center">
             Susan Miller
           </h2>
         </motion.h1>
