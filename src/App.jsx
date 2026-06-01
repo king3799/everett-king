@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -17,6 +18,8 @@ function App() {
     return "light";
   });
 
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+
   useEffect(() => {
     // Update HTML class for Tailwind dark mode
     if (theme === "dark") {
@@ -27,6 +30,18 @@ function App() {
     // Save preference
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollBtn(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -42,6 +57,22 @@ function App() {
         <Projects theme={theme} />
         <Contact theme={theme} />
       </div>
+
+      {/* Scroll to Top Button */}
+      <motion.button
+        onClick={scrollToTop}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: showScrollBtn ? 1 : 0, y: showScrollBtn ? 0 : 20 }}
+        transition={{ duration: 0.3 }}
+        className={`fixed bottom-8 right-8 z-50 p-3 rounded-full shadow-lg transition-colors ${
+          theme === "dark" ? "bg-rose-500 text-white hover:bg-rose-600" : "bg-rose-500 text-white hover:bg-rose-600"
+        }`}
+        aria-label="Scroll to top"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </motion.button>
     </div>
   );
 }

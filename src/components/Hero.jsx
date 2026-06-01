@@ -86,11 +86,11 @@ export default function Hero({ theme }) {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-gray-400 rounded-full"></div>
+        <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer group">
+          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center pt-2 group-hover:border-rose-500 transition-colors">
+            <div className="w-1 h-2 bg-gray-400 rounded-full group-hover:bg-rose-500 transition-colors"></div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );
