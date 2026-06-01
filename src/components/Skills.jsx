@@ -9,62 +9,61 @@ import {
 
 export default function Skills() {
   return (
-    <section className="bg-[#f5f5f5] py-20 px-6" id="skills">
-      <div className="max-w-6xl mx-auto py-5">
-
+    <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white" id="skills">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-gray-500">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Skills & Expertise</h2>
+          <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Technologies and tools I use to bring ideas to life
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Languages */}
           <SkillCard
-            icon={<Code2 size={20} />}
+            icon={<Code2 size={24} />}
             title="Languages"
             skills={[
-             "CSS3", "HTML5", "JavaScript (ES6+)", "PHP","Python", "SQL", "TypeScript"
+              "CSS3",
+              "HTML5",
+              "JavaScript (ES6+)",
+              "PHP",
+              "Python",
+              "SQL",
+              "TypeScript"
             ]}
           />
 
           {/* Frontend */}
           <SkillCard
-            icon={<Layout size={20} />}
+            icon={<Layout size={24} />}
             title="Frontend"
             skills={[
-                    "React",
-                    "Vue.js",
-                    "Redux",
-                    "Vuejs",
-                    "Next.js",
-                    "Android",
-                    "Angular",
-                    "Nuxt.js",
-                    "SvelteKit",
-                    "Tailwind CSS",
-                    "Bootstrap",
-                    "Component",
-                    "Material-UI",
-                    "Ant Design",
-                    "Responsive UI",
-                    "UI/UX Optimization",
-                    "Progressive Web Apps",
-                    "Web Accessibility",
-                    "Cross-browser Compatibility",
+              "React",
+              "Vue.js",
+              "Redux",
+              "Next.js",
+              "Tailwind CSS",
+              "Bootstrap",
+              "Material-UI",
+              "Ant Design",
+              "Responsive UI",
+              "UI/UX Optimization",
+              "Progressive Web Apps",
+              "Web Accessibility",
+              "Cross-browser Compatibility"
             ]}
           />
 
           {/* Backend */}
           <SkillCard
-            icon={<Server size={20} />}
+            icon={<Server size={24} />}
             title="Backend"
             skills={[
-              "ASP .NET Core",
+              "ASP.NET Core",
               "Node.js",
               "Laravel",
               "Express",
@@ -75,13 +74,13 @@ export default function Skills() {
               "WebSockets",
               "Server-Side Rendering",
               "API Design",
-              "OAuth",
+              "OAuth"
             ]}
           />
 
           {/* Databases */}
           <SkillCard
-            icon={<Database size={20} />}
+            icon={<Database size={24} />}
             title="Databases"
             skills={[
               "MySQL",
@@ -90,14 +89,13 @@ export default function Skills() {
               "Redis",
               "Database Design",
               "Query Optimization",
-              "Data Modeling",
-              "IndexDB",
+              "Data Modeling"
             ]}
           />
 
           {/* Tools */}
           <SkillCard
-            icon={<Wrench size={20} />}
+            icon={<Wrench size={24} />}
             title="Tools & Platforms"
             skills={[
               "Git",
@@ -112,13 +110,13 @@ export default function Skills() {
               "Jira",
               "Figma",
               "Linux",
-              "Nginx",
+              "Nginx"
             ]}
           />
 
           {/* Other Skills */}
           <SkillCard
-            icon={<Sparkles size={20} />}
+            icon={<Sparkles size={24} />}
             title="Other Skills"
             skills={[
               "Performance Optimization",
@@ -133,7 +131,7 @@ export default function Skills() {
               "SEO Optimization",
               "Security Best Practices",
               "Team Leadership",
-              "Technical Documentation",
+              "Technical Documentation"
             ]}
           />
         </div>
@@ -145,28 +143,26 @@ export default function Skills() {
 /* Reusable Card Component */
 function SkillCard({ icon, title, skills }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-lg transition">
-
+    <div className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
       {/* Icon + Title */}
       <div className="flex items-center gap-4 mb-6">
-        <div className="bg-rose-100 text-rose-500 p-3 rounded-xl">
+        <div className="bg-rose-50 text-rose-500 p-4 rounded-xl group-hover:bg-rose-500 group-hover:text-white transition-colors duration-300">
           {icon}
         </div>
-        <h3 className="text-lg font-semibold">{title}</h3>
+        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
       </div>
 
       {/* Skill Tags */}
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="text-sm bg-gray-100 px-3 py-1 rounded-lg text-gray-600"
+            className="text-sm bg-gray-50 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-rose-50 hover:border-rose-200 hover:text-rose-600 transition-colors duration-200"
           >
             {skill}
           </span>
         ))}
       </div>
-
     </div>
   );
 }

@@ -2,19 +2,29 @@ import { MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 py-20 text-gray-900">
+    <section id="about" className="py-20 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About Me</h2>
+          <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            My professional journey, experience, and education
+          </p>
+        </div>
 
         {/* Profile Box */}
-        <div className="mt-5 mb-16 ">
+        <div className="mt-8 mb-16">
           <div className="flex items-center gap-3 mb-8">
-            <MapPin className="text-rose-500" size={20} />
-            <h3 className="text-xl font-semibold">Profile</h3>
+            <div className="bg-rose-100 p-3 rounded-xl">
+              <MapPin className="text-rose-500" size={20} />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900">Profile</h3>
           </div>
           <div className="flex items-start gap-4">
-            <div className="space-y-10 border-l border-rose-200 pl-8">
-              <p className="text-gray-700 leading-relaxed ">
-                Full-Stack Web Developer with 5 years of experience building scalable web applications and backend systems. I work with React, Vue, Node.js, Python, Django, and Laravel, and I’ve delivered projects across e-commerce, SaaS, and real-time platforms. I’m comfortable with cloud deployments (AWS, GCP), microservices, and AI/LLM integrations. I focus on performance, clean architecture, and building reliable, production-ready systems.
+            <div className="space-y-6 border-l-4 border-rose-200 pl-8">
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Full-Stack Web Developer with 5 years of experience building scalable web applications and backend systems. I work with React, Vue, Node.js, Python, Django, and Laravel, and I've delivered projects across e-commerce, SaaS, and real-time platforms. I'm comfortable with cloud deployments (AWS, GCP), microservices, and AI/LLM integrations. I focus on performance, clean architecture, and building reliable, production-ready systems.
               </p>
             </div>
           </div>
@@ -22,26 +32,27 @@ export default function About() {
 
         {/* Work Experience */}
         <div className="mb-16">
-          <div className="flex items-center gap-3 mb-8">
-            <Briefcase className="text-rose-500" size={20} />
-            <h3 className="text-xl font-semibold">Work Experience</h3>
+          <div className="flex items-center gap-3 mb-10">
+            <div className="bg-rose-100 p-3 rounded-xl">
+              <Briefcase className="text-rose-500" size={20} />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900">Work Experience</h3>
           </div>
 
-          <div className="space-y-10 border-l border-rose-200 pl-8">
-
+          <div className="space-y-12 border-l-4 border-rose-200 pl-8">
             {/* Full stack web developer */}
             <div className="relative">
-
-              <div className="flex justify-between">
+              <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <h4 className="font-semibold">October Labs Pte Ltd, Singapore | Remote</h4>
-                  <p className="text-sm text-gray-500">Backend-focused Web Developer</p>
+                  <h4 className="font-bold text-xl text-gray-900">October Labs Pte Ltd, Singapore</h4>
+                  <p className="text-rose-500 font-medium mb-3">Backend-focused Web Developer</p>
                 </div>
-                <span className="text-sm text-gray-500">
+                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
                   August 2024 – Present
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
+              <ul className="list-disc pl-5 mt-4 text-gray-700 space-y-3">
                 <li>Turned to Backend-focused Web Developer for leadership in large-scale application design and architecture.</li>
                 <li>Developed Python backend services using Django and FastAPI for data pipelines, AI/ML integration, and API orchestration.</li>
                 <li>Built AI/LLM-powered internal tools and dashboards, leveraging Python to process structured and unstructured data.</li>
@@ -54,16 +65,16 @@ export default function About() {
 
             {/* FULL STACK ENGINEER */}
             <div className="relative">
-
-              <div className="flex justify-between">
+              <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <p className="text-sm text-gray-500">Full stack web developer</p>
+                  <p className="text-rose-500 font-medium mb-3">Full Stack Web Developer</p>
                 </div>
-                <span className="text-sm text-gray-500">
+                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
                   August 2022 - July 2024
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2">
+              <ul className="list-disc pl-5 mt-4 text-gray-700 space-y-3">
                 <li>Designed and implemented Python-based APIs and data processing services for e-commerce and real-time analytics platforms.</li>
                 <li>Integrated backend systems with AI/ML models for recommendation engines, data transformation, and reporting tools.</li>
                 <li>Enhanced application performance and scalability by optimizing Python code and database queries.</li>
@@ -81,22 +92,25 @@ export default function About() {
 
         {/* Education */}
         <div>
-          <div className="flex items-center gap-3 mb-6">
-            <GraduationCap className="text-rose-500" size={20} />
-            <h3 className="text-xl font-semibold">Education</h3>
+          <div className="flex items-center gap-3 mb-8">
+            <div className="bg-rose-100 p-3 rounded-xl">
+              <GraduationCap className="text-rose-500" size={20} />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900">Education</h3>
           </div>
 
-          <div className="border-l border-rose-200 pl-8 relative">
-
-            <div className="flex justify-between">
-              <div>
-                <h4 className="font-semibold">
-                  Shanghai University
-                </h4>
+          <div className="border-l-4 border-rose-200 pl-8 relative">
+            <div className="relative">
+              <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
+                <div>
+                  <h4 className="font-bold text-xl text-gray-900">Shanghai University</h4>
+                  <p className="text-gray-600 mt-1">Bachelor's Degree</p>
+                </div>
+                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
+                  August 2018 – July 2022
+                </span>
               </div>
-              <span className="text-sm text-gray-500">
-                August 2018 – July 2022
-              </span>
             </div>
           </div>
         </div>

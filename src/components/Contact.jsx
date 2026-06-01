@@ -4,7 +4,6 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -35,148 +34,126 @@ export default function Contact() {
   return (
     <>
       <motion.section
-        className="bg-[#f5f5f5] py-20 px-6"
+        className="py-20 px-6 bg-gradient-to-b from-white to-gray-50"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
         id="contact"
       >
-        <div className="max-w-6xl mx-auto py-5">
-
-          {/* Header */}
-          <motion.div
-            className="text-center mb-16"
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl font-bold mb-4">
-              Get In Touch
-            </h2>
-            <p className="text-gray-500">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Get In Touch</h2>
+            <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Have a project in mind or want to collaborate? I'd love to hear from you!
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-
             {/* LEFT SIDE */}
-            <motion.div
-              className="space-y-6"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={{
-                hidden: {},
-                visible: {
-                  transition: {
-                    staggerChildren: 0.2,
-                  },
-                },
-              }}
-            >
+            <div className="space-y-6">
               <ContactInfo
-                icon={<Mail size={20} />}
+                icon={<Mail size={24} />}
                 title="Email"
                 text="susan0907miller@outlook.com"
+                link="mailto:susan0907miller@outlook.com"
               />
-              {/* <ContactInfo
-                icon={<Phone size={20} />}
-                title="Phone"
-                
-                text="+1 650 450 8734"
-              /> */}
               <ContactInfo
-                icon={<MapPin size={20} />}
+                icon={<MapPin size={24} />}
                 title="Location"
                 text="Shanghai, China"
               />
-            </motion.div>
+            </div>
 
             {/* RIGHT SIDE (FORM) */}
             <motion.div
-              className="bg-white rounded-2xl shadow-md p-8"
+              className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100"
               initial={{ x: 80, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
               <form className="space-y-5" onSubmit={sendEmail}>
-
                 <InputField label="Name" placeholder="Your name" name="visitorname" />
                 <InputField label="Email" placeholder="Your Email" name="visitoremail" />
                 <TextAreaField label="Message" placeholder="What do you want?" name="message" />
 
-                {status && <p className=" text-center ">{status}</p>}
+                {status && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`text-center py-3 rounded-lg ${
+                      status.includes("successfully")
+                        ? "bg-green-50 text-green-600"
+                        : "bg-red-50 text-red-600"
+                    }`}
+                  >
+                    {status}
+                  </motion.div>
+                )}
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full bg-rose-500 hover:bg-rose-600 text-white py-3 rounded-lg font-medium transition"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-rose-500 hover:bg-rose-600 text-white py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-rose-500/30"
                   disabled={loading}
-
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </motion.button>
-
               </form>
             </motion.div>
-
           </div>
         </div>
       </motion.section>
 
       {/* Footer */}
-      <footer className="bg-[#0f172a] text-center py-6 text-gray-300 text-sm">
-        <p>
+      <footer className="bg-gray-900 text-center py-8 text-gray-300">
+        <p className="mb-2">
           Modified with <span className="text-rose-500">❤</span> by Susan Miller
         </p>
-        <p className="mt-1 text-gray-400">
-          © 2026 All rights reserved.
-        </p>
+        <p className="text-gray-500 text-sm">© 2026 All rights reserved.</p>
       </footer>
     </>
   );
 }
 
-
 /* Animated Contact Card */
-function ContactInfo({ icon, title, text }) {
-  return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      transition={{ duration: 0.6 }}
-      className="bg-white rounded-xl shadow-sm p-6 flex items-center gap-4"
-    >
-      <div className="bg-rose-100 text-rose-500 p-3 rounded-lg">
+function ContactInfo({ icon, title, text, link }) {
+  const content = (
+    <div className="bg-white rounded-xl shadow-sm p-6 flex items-center gap-4 hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
+      <div className="bg-rose-100 text-rose-500 p-4 rounded-xl group-hover:bg-rose-500 group-hover:text-white transition-colors duration-300">
         {icon}
       </div>
       <div>
-        <h4 className="font-medium text-gray-900">{title}</h4>
+        <h4 className="font-semibold text-gray-900">{title}</h4>
         <p className="text-gray-600 text-sm">{text}</p>
       </div>
-    </motion.div>
+    </div>
   );
+
+  if (link) {
+    return (
+      <a href={link} className="block">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 }
-
-
-
 
 /* Input Components */
 function InputField({ label, placeholder, type = "text", name }) {
   return (
     <div>
-      <label className="block text-sm mb-2 text-gray-700">{label}</label>
+      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
       <motion.input
         type={type}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
         name={name}
-        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all"
       />
     </div>
   );
@@ -185,13 +162,13 @@ function InputField({ label, placeholder, type = "text", name }) {
 function TextAreaField({ label, placeholder, name }) {
   return (
     <div>
-      <label className="block text-sm mb-2 text-gray-700">{label}</label>
+      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
       <motion.textarea
         rows="4"
         name={name}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
-        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none"
       />
     </div>
   );

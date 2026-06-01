@@ -2,21 +2,19 @@ import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
   return (
-    <section className="py-20 px-6" id="projects">
-      <div className="max-w-6xl mx-auto py-5">
-
+    <section className="py-20 px-6 bg-white" id="projects">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            Featured Projects
-          </h2>
-          <p className="text-gray-500">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Featured Projects</h2>
+          <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Here are some of the greatest projects that showcase my skills and experience
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-8">
           <ProjectCard
             image="/ecommerce.png"
             title="E-Commerce Platform"
@@ -44,7 +42,6 @@ export default function Projects() {
             description="Real-time analytics dashboard with interactive charts, custom reports, and data export functionality."
             tags={["Vue.js", "D3.js", "Python", "FastAPI"]}
           />
-
         </div>
       </div>
     </section>
@@ -54,40 +51,45 @@ export default function Projects() {
 /* Reusable Card Component */
 function ProjectCard({ image, title, description, tags }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-1">
-
+    <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
       {/* Image */}
-      <div className="h-56 overflow-hidden">
+      <div className="h-56 overflow-hidden relative">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover hover:scale-105 transition duration-500"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
 
       {/* Content */}
       <div className="p-6">
-
-        <h3 className="text-xl font-semibold mb-3">
-          {title}
-        </h3>
-
-        <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-          {description}
-        </p>
+        <h3 className="text-2xl font-bold mb-3 text-gray-900">{title}</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="text-xs bg-rose-100 text-rose-500 px-3 py-1 rounded-full"
+              className="text-sm bg-rose-50 text-rose-600 px-3 py-1 rounded-full border border-rose-100"
             >
               {tag}
             </span>
           ))}
         </div>
 
+        {/* Links */}
+        <div className="flex gap-4">
+          <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-rose-500 transition-colors font-medium">
+            <Github className="w-5 h-5" />
+            <span>Code</span>
+          </a>
+          <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-rose-500 transition-colors font-medium">
+            <ExternalLink className="w-5 h-5" />
+            <span>Live Demo</span>
+          </a>
+        </div>
       </div>
     </div>
   );
