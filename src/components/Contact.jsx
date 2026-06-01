@@ -6,26 +6,69 @@ import emailjs from "@emailjs/browser";
 export default function Contact({ theme }) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validateForm = (formData) => {
+    const newErrors = {};
+    
+    if (!formData.get("visitorname").trim()) {
+      newErrors.name = "Name is required";
+    }
+    
+    const email = formData.get("visitoremail");
+    if (!email?.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    
+    if (!formData.get("message").trim()) {
+      newErrors.message = "Message is required";
+    } else if (formData.get("message").trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+    
+    return newErrors;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
+    const validationErrors = validateForm(formData);
+    
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+    
     setLoading(true);
-    console.log("email data------------------", e.target);
+    setStatus("");
+    
+    // Create email data with sender name for the template
+    const emailData = {
+      visitorname: formData.get("visitorname"),
+      visitoremail: formData.get("visitoremail"),
+      message: formData.get("message"),
+      reply_to: formData.get("visitoremail") // This helps with reply-to in email
+    };
+    
     emailjs
-      .sendForm(
+      .send(
         "service_9w5i94u",
         "template_ctqxrt8",
-        e.target,
+        emailData,
         "9y9Pp025chXgSnt4l"
       )
       .then(
         () => {
-          setStatus("Message sent successfully.");
+          setStatus("Message sent successfully. I'll get back to you soon!");
           setLoading(false);
           e.target.reset();
+          setErrors({});
         },
-        () => {
-          setStatus("Failed to send message.");
+        (error) => {
+          console.error("Email error:", error);
+          setStatus("Failed to send message. Please try again.");
           setLoading(false);
         }
       );
@@ -89,9 +132,9 @@ export default function Contact({ theme }) {
               viewport={{ once: true }}
             >
               <form className="space-y-5" onSubmit={sendEmail}>
-                <InputField theme={theme} label="Name" placeholder="Your name" name="visitorname" />
-                <InputField theme={theme} label="Email" placeholder="Your Email" name="visitoremail" />
-                <TextAreaField theme={theme} label="Message" placeholder="What do you want?" name="message" />
+                <InputField theme={theme} label="Name" placeholder="Your name" name="visitorname" error={errors.name} />
+                <InputField theme={theme} label="Email" placeholder="Your Email" name="visitoremail" error={errors.email} />
+                <TextAreaField theme={theme} label="Message" placeholder="What do you want?" name="message" error={errors.message} />
 
                 {status && (
                   <motion.div
@@ -161,7 +204,7 @@ function ContactInfo({ theme, icon, title, text, link }) {
 }
 
 /* Input Components */
-function InputField({ theme, label, placeholder, type = "text", name }) {
+function InputField({ theme, label, placeholder, type = "text", name, error }) {
   return (
     <div>
       <label className={`block text-sm font-medium mb-2 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>{label}</label>
@@ -170,17 +213,28 @@ function InputField({ theme, label, placeholder, type = "text", name }) {
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
         name={name}
-        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all ${
-          theme === "dark"
-            ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
-            : "bg-white border-gray-300 text-gray-900 placeholder-gray-400"
+        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-all ${
+          error
+            ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
+            : theme === "dark"
+            ? "border-gray-500 text-white placeholder-gray-400"
+            : "border-gray-300 text-gray-900 placeholder-gray-400"
         }`}
       />
+      {error && (
+        <motion.p
+          initial={{ opacity: 0, y: -5 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-red-500 text-xs mt-1"
+        >
+          {error}
+        </motion.p>
+      )}
     </div>
   );
 }
 
-function TextAreaField({ theme, label, placeholder, name }) {
+function TextAreaField({ theme, label, placeholder, name, error }) {
   return (
     <div>
       <label className={`block text-sm font-medium mb-2 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>{label}</label>
@@ -189,12 +243,23 @@ function TextAreaField({ theme, label, placeholder, name }) {
         name={name}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
-        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none ${
-          theme === "dark"
-            ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
-            : "bg-white border-gray-300 text-gray-900 placeholder-gray-400"
+        className={`w-full rounded-xl px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-all resize-none ${
+          error
+            ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
+            : theme === "dark"
+            ? "border-gray-500 text-white placeholder-gray-400"
+            : "border-gray-300 text-gray-900 placeholder-gray-400"
         }`}
       />
+      {error && (
+        <motion.p
+          initial={{ opacity: 0, y: -5 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-red-500 text-xs mt-1"
+        >
+          {error}
+        </motion.p>
+      )}
     </div>
   );
 }
