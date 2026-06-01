@@ -51,11 +51,13 @@ function App() {
     <div className={`min-h-screen transition-colors duration-300 ${theme === "dark" ? "bg-gray-900 text-gray-100" : "bg-white text-slate-900"}`}>
       <div className="relative z-10">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
-        <Hero theme={theme} />
-        <About theme={theme} />
-        <Skills theme={theme} />
-        <Projects theme={theme} />
-        <Contact theme={theme} />
+        <div className="pt-20">
+          <Hero theme={theme} />
+          <About theme={theme} />
+          <Skills theme={theme} />
+          <Projects theme={theme} />
+          <Contact theme={theme} />
+        </div>
       </div>
 
       {/* Scroll to Top Button */}
@@ -64,7 +66,7 @@ function App() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: showScrollBtn ? 1 : 0, y: showScrollBtn ? 0 : 20 }}
         transition={{ duration: 0.3 }}
-        className={`fixed bottom-8 right-8 z-50 p-3 rounded-full shadow-lg transition-colors ${
+        className={`fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 p-3 rounded-full shadow-lg transition-colors ${
           theme === "dark" ? "bg-rose-500 text-white hover:bg-rose-600" : "bg-rose-500 text-white hover:bg-rose-600"
         }`}
         aria-label="Scroll to top"
