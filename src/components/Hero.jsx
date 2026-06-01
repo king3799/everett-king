@@ -68,7 +68,7 @@ export default function Hero({ theme }) {
         {/* Icons */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/Kilros0817/Kilros0817"
+            href="https://github.com/modernWebDev9"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
@@ -86,11 +86,11 @@ export default function Hero({ theme }) {
         </div>
 
         {/* Scroll Indicator */}
-        <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer group">
+        {/* <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer group">
           <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center pt-2 group-hover:border-rose-500 transition-colors">
             <div className="w-1 h-2 bg-gray-400 rounded-full group-hover:bg-rose-500 transition-colors"></div>
           </div>
-        </a>
+        </a> */}
       </div>
     </section>
   );

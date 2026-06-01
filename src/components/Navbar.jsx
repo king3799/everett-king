@@ -23,8 +23,8 @@ export default function Navbar({ theme, toggleTheme }) {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? theme === "dark" ? "bg-gray-900/95 backdrop-blur-sm shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-lg"
-          : theme === "dark" ? "bg-gray-900" : "bg-white"
+          ? theme === "dark" ? "bg-gray-900/95 backdrop-blur-sm shadow-xl border-b border-gray-800" : "bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100"
+          : theme === "dark" ? "bg-gray-900 border-b border-gray-800" : "bg-white border-b border-gray-100"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">

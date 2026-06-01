@@ -90,8 +90,8 @@ function ProjectCard({ theme, image, title, description, tags }) {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4">
-          <a href="#" className={`flex items-center gap-2 font-medium transition-colors ${
+        {/* <div className="flex gap-4">
+          {/* <a href="#" className={`flex items-center gap-2 font-medium transition-colors ${
             theme === "dark" ? "text-gray-300 hover:text-rose-400" : "text-gray-600 hover:text-rose-500"
           }`}>
             <Github className="w-5 h-5" />
@@ -102,8 +102,8 @@ function ProjectCard({ theme, image, title, description, tags }) {
           }`}>
             <ExternalLink className="w-5 h-5" />
             <span>Live Demo</span>
-          </a>
-        </div>
+          </a> 
+        </div> */}
       </div>
     </div>
   );
