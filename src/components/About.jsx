@@ -51,7 +51,7 @@ export default function About({ theme }) {
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${
                   theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                 }`}>
-                  Aug 2024 – Present
+                  Aug 2024 – Feb 2026
                 </span>
               </div>
               <ul className="list-disc pl-5 mt-4 space-y-3">
