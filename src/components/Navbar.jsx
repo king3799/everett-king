@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
 
 const links = ["Home", "About", "Projects", "Skills", "Contact"];
 
-export default function Navbar() {
+export default function Navbar({ theme, toggleTheme }) {
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,8 +23,8 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-lg"
-          : "bg-white"
+          ? theme === "dark" ? "bg-gray-900/95 backdrop-blur-sm shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-lg"
+          : theme === "dark" ? "bg-gray-900" : "bg-white"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -34,20 +35,20 @@ export default function Navbar() {
           className="flex items-center gap-3 cursor-pointer group"
         >
           <div className="relative">
-            <img 
-              src="/icon.svg" 
-              alt="Susan Miller" 
-              className="w-10 h-10 object-cover rounded-full border-2 border-rose-100 group-hover:border-rose-300 transition-all" 
+            <img
+              src="/icon.svg"
+              alt="Susan Miller"
+              className={`w-10 h-10 object-cover rounded-full border-2 transition-all ${
+                theme === "dark" ? "border-gray-700" : "border-rose-100"
+              } group-hover:border-rose-300`}
             />
             <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-xl font-bold text-gray-900 leading-tight">
+            <h2 className={`text-xl font-bold leading-tight ${theme === "dark" ? "text-white" : "text-gray-900"}`}>
               Susan Miller
             </h2>
-            <span className="text-xs text-rose-500 font-medium tracking-wide">
-              Full Stack Developer
-            </span>
+            <span className="text-xs font-medium tracking-wide">Full Stack Developer</span>
           </div>
         </motion.a>
 
@@ -61,6 +62,8 @@ export default function Navbar() {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                   active === link
                     ? "text-rose-600 bg-rose-50"
+                    : theme === "dark"
+                    ? "text-gray-300 hover:text-rose-400 hover:bg-gray-800"
                     : "text-gray-600 hover:text-rose-500 hover:bg-rose-50/50"
                 }`}
               >
@@ -69,6 +72,23 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Theme Toggle */}
+        <button
+          onClick={toggleTheme}
+          className={`p-2 rounded-lg transition-colors ${
+            theme === "dark"
+              ? "text-yellow-400 hover:bg-gray-800"
+              : "text-gray-600 hover:bg-gray-100"
+          }`}
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? (
+            <Sun className="w-6 h-6" />
+          ) : (
+            <Moon className="w-6 h-6" />
+          )}
+        </button>
 
         {/* Mobile Menu Button (Visual Only) */}
         <div className="md:hidden">

@@ -7,15 +7,15 @@ import {
   Sparkles
 } from "lucide-react";
 
-export default function Skills() {
+export default function Skills({ theme }) {
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white" id="skills">
+    <section className={`py-20 px-6 transition-colors duration-300 ${theme === "dark" ? "bg-gray-800" : "bg-gradient-to-b from-gray-50 to-white"}`} id="skills">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Skills & Expertise</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+          <p className="max-w-2xl mx-auto text-lg">
             Technologies and tools I use to bring ideas to life
           </p>
         </div>
@@ -24,6 +24,7 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Languages */}
           <SkillCard
+            theme={theme}
             icon={<Code2 size={24} />}
             title="Languages"
             skills={[
@@ -39,6 +40,7 @@ export default function Skills() {
 
           {/* Frontend */}
           <SkillCard
+            theme={theme}
             icon={<Layout size={24} />}
             title="Frontend"
             skills={[
@@ -60,6 +62,7 @@ export default function Skills() {
 
           {/* Backend */}
           <SkillCard
+            theme={theme}
             icon={<Server size={24} />}
             title="Backend"
             skills={[
@@ -80,6 +83,7 @@ export default function Skills() {
 
           {/* Databases */}
           <SkillCard
+            theme={theme}
             icon={<Database size={24} />}
             title="Databases"
             skills={[
@@ -95,6 +99,7 @@ export default function Skills() {
 
           {/* Tools */}
           <SkillCard
+            theme={theme}
             icon={<Wrench size={24} />}
             title="Tools & Platforms"
             skills={[
@@ -116,6 +121,7 @@ export default function Skills() {
 
           {/* Other Skills */}
           <SkillCard
+            theme={theme}
             icon={<Sparkles size={24} />}
             title="Other Skills"
             skills={[
@@ -141,15 +147,19 @@ export default function Skills() {
 }
 
 /* Reusable Card Component */
-function SkillCard({ icon, title, skills }) {
+function SkillCard({ theme, icon, title, skills }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+    <div className={`rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group ${
+      theme === "dark" ? "bg-gray-700 hover:bg-gray-650" : "bg-white hover:shadow-xl"
+    } border ${theme === "dark" ? "border-gray-600" : "border-gray-200"}`}>
       {/* Icon + Title */}
       <div className="flex items-center gap-4 mb-6">
-        <div className="bg-rose-50 text-rose-500 p-4 rounded-xl group-hover:bg-rose-500 group-hover:text-white transition-colors duration-300">
+        <div className={`p-4 rounded-xl transition-colors duration-300 ${
+          theme === "dark" ? "bg-gray-600 text-rose-400 group-hover:bg-rose-500 group-hover:text-white" : "bg-rose-50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white"
+        }`}>
           {icon}
         </div>
-        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+        <h3 className="text-xl font-bold">{title}</h3>
       </div>
 
       {/* Skill Tags */}
@@ -157,7 +167,11 @@ function SkillCard({ icon, title, skills }) {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="text-sm bg-gray-50 text-gray-700 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-rose-50 hover:border-rose-200 hover:text-rose-600 transition-colors duration-200"
+            className={`text-sm px-3 py-1.5 rounded-lg transition-colors duration-200 ${
+              theme === "dark"
+                ? "bg-gray-600 text-gray-300 hover:bg-rose-500/20 hover:text-rose-400"
+                : "bg-gray-50 text-gray-700 hover:bg-rose-50 hover:text-rose-600"
+            }`}
           >
             {skill}
           </span>

@@ -28,6 +28,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
 /* Sparkle Animation */
 .sparkle::after {
   content: "";

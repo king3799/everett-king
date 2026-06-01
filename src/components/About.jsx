@@ -1,14 +1,14 @@
 import { MapPin, Briefcase, GraduationCap } from "lucide-react";
 
-export default function About() {
+export default function About({ theme }) {
   return (
-    <section id="about" className="py-20 px-6 bg-white">
+    <section id="about" className={`py-20 px-6 transition-colors duration-300 ${theme === "dark" ? "bg-gray-900" : "bg-white"}`}>
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto">
             My professional journey, experience, and education
           </p>
         </div>
@@ -19,11 +19,11 @@ export default function About() {
             <div className="bg-rose-100 p-3 rounded-xl">
               <MapPin className="text-rose-500" size={20} />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">Profile</h3>
+            <h3 className="text-2xl font-bold">Profile</h3>
           </div>
           <div className="flex items-start gap-4">
             <div className="space-y-6 border-l-4 border-rose-200 pl-8">
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="leading-relaxed text-lg">
                 Full-Stack Web Developer with 5 years of experience building scalable web applications and backend systems. I work with React, Vue, Node.js, Python, Django, and Laravel, and I've delivered projects across e-commerce, SaaS, and real-time platforms. I'm comfortable with cloud deployments (AWS, GCP), microservices, and AI/LLM integrations. I focus on performance, clean architecture, and building reliable, production-ready systems.
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function About() {
             <div className="bg-rose-100 p-3 rounded-xl">
               <Briefcase className="text-rose-500" size={20} />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">Work Experience</h3>
+            <h3 className="text-2xl font-bold">Work Experience</h3>
           </div>
 
           <div className="space-y-12 border-l-4 border-rose-200 pl-8">
@@ -45,14 +45,16 @@ export default function About() {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <h4 className="font-bold text-xl text-gray-900">October Labs Pte Ltd, Singapore</h4>
+                  <h4 className="font-bold text-xl">October Labs Pte Ltd, Singapore</h4>
                   <p className="text-rose-500 font-medium mb-3">Backend-focused Web Developer</p>
                 </div>
-                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
+                <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${
+                  theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
+                }`}>
                   August 2024 – Present
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-4 text-gray-700 space-y-3">
+              <ul className="list-disc pl-5 mt-4 space-y-3">
                 <li>Turned to Backend-focused Web Developer for leadership in large-scale application design and architecture.</li>
                 <li>Developed Python backend services using Django and FastAPI for data pipelines, AI/ML integration, and API orchestration.</li>
                 <li>Built AI/LLM-powered internal tools and dashboards, leveraging Python to process structured and unstructured data.</li>
@@ -70,11 +72,11 @@ export default function About() {
                 <div>
                   <p className="text-rose-500 font-medium mb-3">Full Stack Web Developer</p>
                 </div>
-                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
+                <span className="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
                   August 2022 - July 2024
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-4 text-gray-700 space-y-3">
+              <ul className="list-disc pl-5 mt-4 space-y-3">
                 <li>Designed and implemented Python-based APIs and data processing services for e-commerce and real-time analytics platforms.</li>
                 <li>Integrated backend systems with AI/ML models for recommendation engines, data transformation, and reporting tools.</li>
                 <li>Enhanced application performance and scalability by optimizing Python code and database queries.</li>
@@ -96,7 +98,7 @@ export default function About() {
             <div className="bg-rose-100 p-3 rounded-xl">
               <GraduationCap className="text-rose-500" size={20} />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">Education</h3>
+            <h3 className="text-2xl font-bold">Education</h3>
           </div>
 
           <div className="border-l-4 border-rose-200 pl-8 relative">
@@ -104,10 +106,10 @@ export default function About() {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <h4 className="font-bold text-xl text-gray-900">Shanghai University</h4>
-                  <p className="text-gray-600 mt-1">Bachelor's Degree</p>
+                  <h4 className="font-bold text-xl">Shanghai University</h4>
+                  <p className="mt-1">Bachelor's Degree</p>
                 </div>
-                <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
+                <span className="text-sm font-semibold bg-gray-100 px-3 py-1 rounded-lg self-start md:self-auto">
                   August 2018 – July 2022
                 </span>
               </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-export default function Contact() {
+export default function Contact({ theme }) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -34,7 +34,9 @@ export default function Contact() {
   return (
     <>
       <motion.section
-        className="py-20 px-6 bg-gradient-to-b from-white to-gray-50"
+        className={`py-20 px-6 transition-colors duration-300 ${
+          theme === "dark" ? "bg-gray-800" : "bg-gradient-to-b from-white to-gray-50"
+        }`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -44,9 +46,9 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Get In Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
             <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="max-w-2xl mx-auto">
               Have a project in mind or want to collaborate? I'd love to hear from you!
             </p>
           </div>
@@ -55,12 +57,21 @@ export default function Contact() {
             {/* LEFT SIDE */}
             <div className="space-y-6">
               <ContactInfo
+                theme={theme}
                 icon={<Mail size={24} />}
                 title="Email"
                 text="susan0907miller@outlook.com"
                 link="mailto:susan0907miller@outlook.com"
               />
+              {/* <ContactInfo
+                theme={theme}
+                icon={<Phone size={24} />}
+                title="Phone"
+                text="+1 650 450 8734"
+                link="tel:+16504508734"
+              /> */}
               <ContactInfo
+                theme={theme}
                 icon={<MapPin size={24} />}
                 title="Location"
                 text="Shanghai, China"
@@ -69,16 +80,18 @@ export default function Contact() {
 
             {/* RIGHT SIDE (FORM) */}
             <motion.div
-              className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100"
+              className={`rounded-2xl p-8 border ${
+                theme === "dark" ? "bg-gray-700 border-gray-600" : "bg-white border-gray-100"
+              } shadow-xl`}
               initial={{ x: 80, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
               <form className="space-y-5" onSubmit={sendEmail}>
-                <InputField label="Name" placeholder="Your name" name="visitorname" />
-                <InputField label="Email" placeholder="Your Email" name="visitoremail" />
-                <TextAreaField label="Message" placeholder="What do you want?" name="message" />
+                <InputField theme={theme} label="Name" placeholder="Your name" name="visitorname" />
+                <InputField theme={theme} label="Email" placeholder="Your Email" name="visitoremail" />
+                <TextAreaField theme={theme} label="Message" placeholder="What do you want?" name="message" />
 
                 {status && (
                   <motion.div
@@ -108,7 +121,7 @@ export default function Contact() {
       </motion.section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-center py-8 text-gray-300">
+      <footer className={`text-center py-8 ${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-900 text-gray-300"}`}>
         <p className="mb-2">
           Modified with <span className="text-rose-500">❤</span> by Susan Miller
         </p>
@@ -119,15 +132,19 @@ export default function Contact() {
 }
 
 /* Animated Contact Card */
-function ContactInfo({ icon, title, text, link }) {
+function ContactInfo({ theme, icon, title, text, link }) {
   const content = (
-    <div className="bg-white rounded-xl shadow-sm p-6 flex items-center gap-4 hover:shadow-md transition-all duration-300 hover:-translate-y-1 group">
-      <div className="bg-rose-100 text-rose-500 p-4 rounded-xl group-hover:bg-rose-500 group-hover:text-white transition-colors duration-300">
+    <div className={`rounded-xl p-6 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 group ${
+      theme === "dark" ? "bg-gray-700" : "bg-white"
+    } border ${theme === "dark" ? "border-gray-600" : "border-gray-200"} shadow-sm`}>
+      <div className={`p-4 rounded-xl transition-colors duration-300 ${
+        theme === "dark" ? "bg-gray-600 text-rose-400 group-hover:bg-rose-500 group-hover:text-white" : "bg-rose-100 text-rose-500 group-hover:bg-rose-500 group-hover:text-white"
+      }`}>
         {icon}
       </div>
       <div>
-        <h4 className="font-semibold text-gray-900">{title}</h4>
-        <p className="text-gray-600 text-sm">{text}</p>
+        <h4 className="font-semibold">{title}</h4>
+        <p className="text-sm">{text}</p>
       </div>
     </div>
   );
@@ -144,31 +161,39 @@ function ContactInfo({ icon, title, text, link }) {
 }
 
 /* Input Components */
-function InputField({ label, placeholder, type = "text", name }) {
+function InputField({ theme, label, placeholder, type = "text", name }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
+      <label className={`block text-sm font-medium mb-2 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>{label}</label>
       <motion.input
         type={type}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
         name={name}
-        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all"
+        className={`w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all ${
+          theme === "dark"
+            ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
+            : "bg-white border-gray-200 text-gray-900 placeholder-gray-400"
+        }`}
       />
     </div>
   );
 }
 
-function TextAreaField({ label, placeholder, name }) {
+function TextAreaField({ theme, label, placeholder, name }) {
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
+      <label className={`block text-sm font-medium mb-2 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>{label}</label>
       <motion.textarea
         rows="4"
         name={name}
         placeholder={placeholder}
         whileFocus={{ scale: 1.02 }}
-        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none"
+        className={`w-full rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500 transition-all resize-none ${
+          theme === "dark"
+            ? "bg-gray-600 border-gray-500 text-white placeholder-gray-400"
+            : "bg-white border-gray-200 text-gray-900 placeholder-gray-400"
+        }`}
       />
     </div>
   );

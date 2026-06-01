@@ -1,31 +1,30 @@
 import { Github, Mail } from "lucide-react";
 
-export default function Hero() {
+export default function Hero({ theme }) {
   return (
-    <section className="pt-24 pb-16" id="home">
+    <section className={`pt-24 pb-16 transition-colors duration-300 ${theme === "dark" ? "bg-gray-900" : "bg-white"}`} id="home">
       <div className="flex flex-col items-center justify-center text-center flex-1 px-6 min-h-[85vh]">
         {/* Profile Image */}
-        <div className="relative group w-72 h-72 rounded-full overflow-hidden sparkle mb-8 shadow-2xl">
+        <div className={`relative group w-72 h-72 rounded-full overflow-hidden sparkle mb-8 shadow-2xl ${theme === "dark" ? "border-4 border-gray-800" : "border-4 border-white/20"}`}>
           <img
             src="/profile.png"
             alt="Susan Miller"
             className="w-full h-auto object-cover rounded-full"
           />
-          <div className="absolute inset-0 rounded-full border-4 border-white/20"></div>
         </div>
 
         {/* Heading */}
-        <h2 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900">
+        <h2 className="text-5xl md:text-6xl font-bold mb-4">
           Full Stack <span className="text-rose-500">Web Developer</span>
         </h2>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-600 mb-6 font-medium">
+        <p className="text-xl md:text-2xl mb-6 font-medium">
           Hi, I'm Susan Miller
         </p>
 
         {/* Description */}
-        <p className="max-w-3xl text-lg md:text-xl text-gray-500 leading-relaxed mb-12">
+        <p className="max-w-3xl text-lg md:text-xl leading-relaxed mb-12">
           I build scalable, high-performance web applications with React, Node.js, Python, and Django. I specialize in modern AI integration and crafting solutions that combine clean design with robust architecture.
         </p>
 
@@ -40,7 +39,11 @@ export default function Hero() {
 
           <a
             href="#projects"
-            className="border-2 border-rose-500 text-rose-500 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium hover:text-rose-600 hover:border-rose-600"
+            className={`border-2 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium ${
+              theme === "dark"
+                ? "border-rose-500 text-rose-500 hover:text-rose-400"
+                : "border-rose-500 text-rose-500 hover:border-rose-600"
+            }`}
           >
             View Work
           </a>
@@ -49,25 +52,25 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 md:gap-16 mb-12">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">5+</div>
-            <div className="text-sm text-gray-500 uppercase tracking-wide">Years Experience</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">5+</div>
+            <div className="text-sm uppercase tracking-wide">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">50+</div>
-            <div className="text-sm text-gray-500 uppercase tracking-wide">Projects</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">50+</div>
+            <div className="text-sm uppercase tracking-wide">Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">30+</div>
-            <div className="text-sm text-gray-500 uppercase tracking-wide">Clients</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">30+</div>
+            <div className="text-sm uppercase tracking-wide">Clients</div>
           </div>
         </div>
 
         {/* Icons */}
-        <div className="flex gap-6 text-gray-400">
+        <div className="flex gap-6">
           <a
             href="https://github.com/Kilros0817/Kilros0817"
             target="_blank"
-            className="group transition-all duration-300 hover:text-gray-900 hover:-translate-y-1"
+            className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
@@ -75,7 +78,7 @@ export default function Hero() {
           <a
             href="mailto:susan0907miller@outlook.com"
             target="_blank"
-            className="group transition-all duration-300 hover:text-gray-900 hover:-translate-y-1"
+            className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="Email"
           >
             <Mail className="w-6 h-6" />
