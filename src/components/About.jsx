@@ -59,11 +59,11 @@ Proven ability to work across the entire development lifecycle, from requirement
               </div>
               <ul className="list-disc pl-5 mt-4 space-y-3">
                 <li>Turned to Backend-focused Web Developer for leadership in large-scale application design and architecture.</li>
+                <li>Implemented microservices architecture in Node.js and Python, reducing system downtime</li>
                 <li>Developed Python backend services using Django and FastAPI for data pipelines, AI/ML integration, and API orchestration.</li>
                 <li>Built AI/LLM-powered internal tools and dashboards, leveraging Python to process structured and unstructured data.</li>
                 <li>Led React and Vue.js frontend projects, optimizing performance and ensuring accessibility.</li>
-                <li>Implemented microservices architecture in Node.js and Python, reducing system downtime by 35%.</li>
-                <li>Oversaw CI/CD pipelines, automated testing, and cloud deployment, improving release efficiency by 40%.</li>
+                <li>Oversaw CI/CD pipelines, automated testing, and cloud deployment, improving release efficiency</li>
                 <li>Mentored junior engineers in Python and JavaScript best practices, code reviews, and testing methodologies.</li>
               </ul>
             </div>

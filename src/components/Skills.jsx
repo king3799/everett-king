@@ -45,18 +45,19 @@ export default function Skills({ theme }) {
             title="Frontend"
             skills={[
               "React",
-              "Vue.js",
-              "Redux",
               "Next.js",
+              "Angular",
+              "React Native",
+              "Redux",
               "Tailwind CSS",
               "Bootstrap",
               "Material-UI",
-              "Ant Design",
+              // "Ant Design",
               "Responsive UI",
               "UI/UX Optimization",
               "Progressive Web Apps",
-              "Web Accessibility",
-              "Cross-browser Compatibility"
+              // "Web Accessibility",
+              // "Cross-browser Compatibility"
             ]}
           />
 
@@ -66,8 +67,11 @@ export default function Skills({ theme }) {
             icon={<Server size={24} />}
             title="Backend"
             skills={[
-              "ASP.NET Core",
+              // "ASP.NET Core",
               "Node.js",
+              "Django",
+              "Flask",
+              "FlastAPI",
               "Laravel",
               "Express",
               "REST APIs",
@@ -77,7 +81,7 @@ export default function Skills({ theme }) {
               "WebSockets",
               "Server-Side Rendering",
               "API Design",
-              "OAuth"
+              // "OAuth"
             ]}
           />
 
@@ -87,8 +91,8 @@ export default function Skills({ theme }) {
             icon={<Database size={24} />}
             title="Databases"
             skills={[
-              "MySQL",
               "MongoDB",
+              "MySQL",
               "PostgreSQL",
               "Redis",
               "Database Design",
@@ -103,18 +107,18 @@ export default function Skills({ theme }) {
             icon={<Wrench size={24} />}
             title="Tools & Platforms"
             skills={[
-              "Git",
+              // "Git",
               "GitHub",
               "Docker",
               "Webpack",
-              "Vite",
+              // "Vite",
               "NPM",
               "Yarn",
               "Postman",
               "VS Code",
               "Jira",
-              "Figma",
-              "Linux",
+              // "Figma",
+              // "Linux",
               "Nginx"
             ]}
           />
@@ -129,14 +133,14 @@ export default function Skills({ theme }) {
               "Debugging",
               "Testing",
               "Jest",
-              "Cypress",
-              "Agile/Scrum",
+              // "Cypress",
+              // "Agile/Scrum",
               "Project Management",
               "Code Review",
               "CI/CD",
-              "SEO Optimization",
-              "Security Best Practices",
-              "Team Leadership",
+              // "SEO Optimization",
+              // "Security Best Practices",
+              // "Team Leadership",
               "Technical Documentation"
             ]}
           />
