@@ -7,17 +7,17 @@ export default function Hero({ theme }) {
 
         {/* Heading */}
         <h2 className="text-5xl md:text-6xl font-bold mb-4">
-          Full Stack <span className="text-rose-500">Web Developer</span>
+          Full-Stack  <span className="text-rose-500">Web,&nbsp;AI,&nbsp;Mobile</span>
         </h2>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl mb-6 font-medium">
-          Hi, I'm Susan Miller
+          Hi, I'm Susan. I build modern web, mobile applications and AI-powered solutions.
         </p>
         {/* Description */}
-        <p className="max-w-3xl text-lg md:text-xl leading-relaxed mb-6">
-          I build scalable, high-performance web applications with React, Node.js, Python, and Django. I specialize in modern AI integration and crafting solutions that combine clean design with robust architecture.
-        </p>
+        {/* <p className="max-w-4xl text-lg md:text-xl leading-relaxed mb-6">
+          React · Node.js · Python · Django · Full-Stack Development · AI Integration · Scalable Applications · High Performance · Clean UI · Robust Architecture
+        </p> */}
 
         {/* Profile Image */}
         <div className={`relative group w-40 h-40 rounded-full overflow-hidden sparkle mb-8 shadow-2xl ${theme === "dark" ? "border-4 border-gray-800" : "border-4 border-white/20"}`}>
@@ -47,21 +47,31 @@ export default function Hero({ theme }) {
           >
             View Work
           </a>
+          <a
+            href="/Susan-Miller-CV.pdf"
+            className={`border-2 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium ${theme === "dark"
+              ? "border-rose-500 text-rose-500 hover:text-rose-400"
+              : "border-rose-500 text-rose-500 hover:border-rose-600"
+              }`}
+          >
+            Download CV
+          </a>
         </div>
+        
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 md:gap-16 mb-12">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">5+</div>
-            <div className="text-sm uppercase tracking-wide">Years Experience</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">10+ </div>
+            <div className="text-sm uppercase tracking-wide">Technologies</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">50+</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">20+</div>
             <div className="text-sm uppercase tracking-wide">Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">30+</div>
-            <div className="text-sm uppercase tracking-wide">Clients</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">3+</div>
+            <div className="text-sm uppercase tracking-wide">AI Integrations</div>
           </div>
         </div>
 
