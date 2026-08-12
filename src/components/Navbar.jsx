@@ -42,9 +42,9 @@ export default function Navbar({ theme, toggleTheme }) {
         >
           <div className="relative">
             <img
-              src="/icon.svg"
-              alt="Susan Miller"
-              className={`w-10 h-10 object-cover rounded-full border-2 transition-all ${
+              src="/icon.png"
+              alt="Susan Miller"  
+              className={`w-12 h-12 object-cover rounded-full border-2 transition-all ${
                 theme === "dark" ? "border-gray-700" : "border-rose-100"
               } group-hover:border-rose-300`}
             />
