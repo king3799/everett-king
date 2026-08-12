@@ -103,8 +103,8 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<Mail size={24} />}
                 title="Email"
-                text="susan.fullstackdev@gmail.com"
-                link="mailto:susan.fullstackdev@gmail.com"
+                text="susan0907miller@gmail.com"
+                link="mailto:susan0907miller@gmail.com"
               />
               {/* <ContactInfo
                 theme={theme}
