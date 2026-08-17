@@ -24,7 +24,7 @@ export default function About({ theme }) {
           <div className="flex items-start gap-4">
             <div className="space-y-6 border-l-4 border-rose-200 pl-8">
               <p className="leading-relaxed text-lg">
-                Full-Stack Web Developer with 5 years of experience designing, developing, and maintaining modern web applications.
+                Full-Stack Web Developer with 4+ years of experience designing, developing, and maintaining modern web applications.
                 Skilled in JavaScript, TypeScript, React, Next.js, Node.js, and SQL databases, with a strong focus on performance, scalability, and user experience.
                 <br /><br />
                 Experienced in building responsive front-end interfaces, developing secure backend APIs, integrating third-party services, and deploying cloud-based applications.
