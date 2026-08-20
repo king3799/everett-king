@@ -117,7 +117,7 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<MapPin size={24} />}
                 title="Location"
-                text="Shanghai, China"
+                text="Singapore, Singapore"
               />
             </div>
 
