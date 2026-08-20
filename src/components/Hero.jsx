@@ -78,7 +78,7 @@ export default function Hero({ theme }) {
         {/* Icons */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/modernWebDev9"
+            href="https://github.com/Julialeedev"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
