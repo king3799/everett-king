@@ -125,7 +125,7 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <h4 className="font-bold text-xl">Shanghai University</h4>
+                  <h4 className="font-bold text-xl">The Hong Kong University</h4>
                   <p className="mt-1">Bachelor's Degree in Computer Science</p>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
