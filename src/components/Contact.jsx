@@ -103,8 +103,8 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<Mail size={24} />}
                 title="Email"
-                text="susan0907miller@gmail.com"
-                link="mailto:susan0907miller@gmail.com"
+                text="juliadev9@outlook.com"
+                link="mailto:juliadev9@outlook.com"
               />
               {/* <ContactInfo
                 theme={theme}
@@ -166,7 +166,7 @@ export default function Contact({ theme }) {
       {/* Footer */}
       <footer className={`text-center py-8 ${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-900 text-gray-300"}`}>
         <p className="mb-2">
-          Modified with <span className="text-rose-500">❤</span> by Susan Miller
+          Modified with <span className="text-rose-500">❤</span> by Juila Bennett
         </p>
         <p className="text-gray-500 text-sm">© 2026 All rights reserved.</p>
       </footer>

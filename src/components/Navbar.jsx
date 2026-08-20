@@ -43,7 +43,7 @@ export default function Navbar({ theme, toggleTheme }) {
           <div className="relative">
             <img
               src="/icon.png"
-              alt="Susan Miller"  
+              alt="Juila Bennett"  
               className={`w-12 h-12 object-cover rounded-full border-2 transition-all ${
                 theme === "dark" ? "border-gray-700" : "border-rose-100"
               } group-hover:border-rose-300`}
@@ -52,7 +52,7 @@ export default function Navbar({ theme, toggleTheme }) {
           </div>
           <div className="flex flex-col">
             <h2 className={`text-xl font-bold leading-tight ${theme === "dark" ? "text-white" : "text-gray-900"}`}>
-              Susan Miller
+              Juila Bennett
             </h2>
             <span className="text-xs font-medium tracking-wide">Full Stack Developer</span>
           </div>
