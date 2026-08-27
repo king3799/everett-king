@@ -106,18 +106,18 @@ export default function Contact({ theme }) {
                 text="juliadev9@outlook.com"
                 link="mailto:juliadev9@outlook.com"
               />
-              {/* <ContactInfo
+              <ContactInfo
                 theme={theme}
                 icon={<Phone size={24} />}
                 title="Phone"
-                text="+1 650 450 8734"
-                link="tel:+16504508734"
-              /> */}
+                text="+7 981 879 9968"
+                link="tel:79818799968"
+              />
               <ContactInfo
                 theme={theme}
                 icon={<MapPin size={24} />}
                 title="Location"
-                text="Singapore, Singapore"
+                text="St.Petersburg, Russia"
               />
             </div>
 
