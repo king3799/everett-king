@@ -12,7 +12,7 @@ export default function Hero({ theme }) {
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl mb-6 font-medium">
-          Hi, I'm Juila. I build modern web, mobile applications and AI-powered solutions.
+          Hi, I'm Julia. I build modern web, mobile applications and AI-powered solutions.
         </p>
         {/* Description */}
         {/* <p className="max-w-4xl text-lg md:text-xl leading-relaxed mb-6">
@@ -23,7 +23,7 @@ export default function Hero({ theme }) {
         <div className={`relative group w-40 h-40 rounded-full overflow-hidden sparkle mb-8 shadow-2xl ${theme === "dark" ? "border-4 border-gray-800" : "border-4 border-white/20"}`}>
           <img
             src="/profile.png"
-            alt="Juila Lee"
+            alt="Julia Lee"
             className="w-full h-auto object-cover rounded-full"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Hero({ theme }) {
             View Work
           </a>
           <a
-            href="/Juila-Lee-CV.pdf"
+            href="/Julia-Lee-CV.pdf"
             className={`border-2 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium ${theme === "dark"
               ? "border-rose-500 text-rose-500 hover:text-rose-400"
               : "border-rose-500 text-rose-500 hover:border-rose-600"

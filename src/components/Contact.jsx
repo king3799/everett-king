@@ -166,7 +166,7 @@ export default function Contact({ theme }) {
       {/* Footer */}
       <footer className={`text-center py-8 ${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-900 text-gray-300"}`}>
         <p className="mb-2">
-          Modified with <span className="text-rose-500">❤</span> by Juila Lee
+          Modified with <span className="text-rose-500">❤</span> by Julia Lee
         </p>
         <p className="text-gray-500 text-sm">© 2026 All rights reserved.</p>
       </footer>
