@@ -49,7 +49,7 @@ function App() {
         const country = locationData.country_name || "Unknown";
         const countryCode = locationData.country_code || "Unknown";
 
-        console.log("Country:", country);
+        // console.log("Country:", country);
         // console.log("Country Code:", countryCode);
 
         // 3. Send visitor information to your email
