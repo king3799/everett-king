@@ -106,13 +106,13 @@ export default function Contact({ theme }) {
                 text="angierisch00@gmail.com"
                 link="mailto:angierisch00@gmail.com"
               />
-              <ContactInfo
+              {/* <ContactInfo
                 theme={theme}
                 icon={<Phone size={24} />}
                 title="Phone"
                 text="+1 650 450 8734"
                 link="tel:16504508734"
-              />
+              /> */}
               <ContactInfo
                 theme={theme}
                 icon={<MapPin size={24} />}
