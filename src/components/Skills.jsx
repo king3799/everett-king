@@ -15,9 +15,6 @@ export default function Skills({ theme }) {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-rose-500 mx-auto rounded-full mb-4"></div>
-          <p className="max-w-2xl mx-auto text-lg">
-            Technologies and tools I use to bring ideas to life
-          </p>
         </div>
 
         {/* Grid */}

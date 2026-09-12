@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Linkedin } from "lucide-react";
 
 export default function Hero({ theme }) {
   return (
@@ -7,12 +7,12 @@ export default function Hero({ theme }) {
 
         {/* Heading */}
         <h2 className="text-5xl md:text-6xl font-bold mb-4">
-          Full-Stack  <span className="text-rose-500">Web,&nbsp;AI,&nbsp;Mobile</span>
+          Full-Stack  <span className="text-rose-500">Web Developer</span>
         </h2>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl mb-6 font-medium">
-          Hi, I'm Julia. I build modern web, mobile applications and AI-powered solutions.
+          Hello, I'm Ashley. 
         </p>
         {/* Description */}
         {/* <p className="max-w-4xl text-lg md:text-xl leading-relaxed mb-6">
@@ -22,8 +22,8 @@ export default function Hero({ theme }) {
         {/* Profile Image */}
         <div className={`relative group w-40 h-40 rounded-full overflow-hidden sparkle mb-8 shadow-2xl ${theme === "dark" ? "border-4 border-gray-800" : "border-4 border-white/20"}`}>
           <img
-            src="/profile.png"
-            alt="Julia Lee"
+            src="/profile1.png"
+            alt="Ashley Gierisch"
             className="w-full h-auto object-cover rounded-full"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Hero({ theme }) {
             View Work
           </a>
           <a
-            href="/Julia-Lee-CV.pdf"
+            href="/Ashley_Gierisch.pdf"
             className={`border-2 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium ${theme === "dark"
               ? "border-rose-500 text-rose-500 hover:text-rose-400"
               : "border-rose-500 text-rose-500 hover:border-rose-600"
@@ -78,15 +78,25 @@ export default function Hero({ theme }) {
         {/* Icons */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/Julialeedev"
+            href="https://github.com/ashleygierisch"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
           </a>
+
           <a
-            href="mailto:juliadev9@outlook.com"
+            href="https://www.linkedin.com/in/ashley-gierisch-404279436"
+            target="_blank"
+            className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
+            aria-label="GitHub"
+          >
+            <Linkedin className="w-6 h-6" />
+          </a>
+          
+          <a
+            href="mailto:angierisch00@gmail.com"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="Email"

@@ -54,7 +54,7 @@ export default function Contact({ theme }) {
     
     emailjs
       .send(
-        "service_9w5i94u",
+        "service_3falp0a",
         "template_ctqxrt8",
         emailData,
         "9y9Pp025chXgSnt4l"
@@ -103,21 +103,21 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<Mail size={24} />}
                 title="Email"
-                text="juliadev9@outlook.com"
-                link="mailto:juliadev9@outlook.com"
+                text="angierisch00@gmail.com"
+                link="mailto:angierisch00@gmail.com"
               />
               <ContactInfo
                 theme={theme}
                 icon={<Phone size={24} />}
                 title="Phone"
-                text="+7 981 879 9968"
-                link="tel:79818799968"
+                text="+1 650 450 8734"
+                link="tel:16504508734"
               />
               <ContactInfo
                 theme={theme}
                 icon={<MapPin size={24} />}
                 title="Location"
-                text="St.Petersburg, Russia"
+                text="Kerrville, TX"
               />
             </div>
 
@@ -166,7 +166,7 @@ export default function Contact({ theme }) {
       {/* Footer */}
       <footer className={`text-center py-8 ${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-900 text-gray-300"}`}>
         <p className="mb-2">
-          Modified with <span className="text-rose-500">❤</span> by Julia Lee
+          Modified with by Ashley Gierisch
         </p>
         <p className="text-gray-500 text-sm">© 2026 All rights reserved.</p>
       </footer>

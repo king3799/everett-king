@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Github, Link } from "lucide-react";
 
 export default function Projects({ theme }) {
   return (
@@ -14,37 +14,36 @@ export default function Projects({ theme }) {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
+
           <ProjectCard
             theme={theme}
-            image="/ecommerce.png"
-            title="E-Commerce Platform"
-            description="Designed and developed a full-stack e-commerce platform with both admin management features and a user-friendly frontend."
-            tags={["React", "Node.js", "PostgreSQL", "Stripe"]}
+            image="/gas_transaction.png"
+            title="GASTAR – Natural Gas Transaction & Energy Management Platform"
+            description="Rebuilt ENSYTE’s corporate website with React 18, implementing responsive UI, routing, interactive components, and Netlify deployment."
+            tags={["JavaScript", "React", "Firebase", "Bootstrap", "Slick Carousel", "Tailwind CSS"]}
+            Githublink="https://github.com/ashleygierisch/Ensyte_Website_React"
+            Livelink="https://ensyte.com/"
           />
 
           <ProjectCard
             theme={theme}
-            image="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-            title="Task Management App"
-            description="Collaborative task management tool with drag-and-drop interface, team collaboration features, and real-time updates."
-            tags={["TypeScript", "React", "Firebase", "Tailwind CSS"]}
+            image="/model.png"
+            title="Model Context Protocol (MCP) Server Development"
+            description="Developed reference MCP servers enabling LLMs to securely interact with files, Git repositories, web content, memory, and other tools through standardized protocols."
+            tags={["TypeScript", "Python", "MCP SDK", "Node.js", "uv/uvx", "Claude Desktop"]}
+            Githublink=""
+            Livelink=""
           />
 
           <ProjectCard
             theme={theme}
-            image="https://images.unsplash.com/photo-1551650975-87deedd944c3"
-            title="Mobile Fitness Tracker"
-            description="Cross-platform mobile app for tracking workouts, setting goals, and monitoring progress with beautiful data visualizations."
-            tags={["React Native", "MongoDB", "Express", "Chart.js"]}
-          />
-
-          <ProjectCard
-            theme={theme}
-            image="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-            title="Analytics Dashboard"
-            description="Real-time analytics dashboard with interactive charts, custom reports, and data export functionality."
-            tags={["Vue.js", "D3.js", "Python", "FastAPI"]}
+            image="/Shouting_game.png"
+            title="Shouting game"
+            description="Integrated Hugging Face DistilBERT sentiment analysis to dynamically modify gameplay, including player health, enemy behavior, scoring, and visual themes. "
+            tags={["Python", "Streamlit", "PyTorch", "DistilBERT", "HTML5 Canvas + JavaScript", "Hugging Face Transformers",]}
+            Githublink="https://github.com/ashleygierisch/Arena-game"
+            Livelink="https://arena-shouting-game.streamlit.app/"
           />
         </div>
       </div>
@@ -53,13 +52,12 @@ export default function Projects({ theme }) {
 }
 
 /* Reusable Card Component */
-function ProjectCard({ theme, image, title, description, tags }) {
+function ProjectCard({ theme, image, title, description, tags, Githublink, Livelink }) {
   return (
-    <div className={`rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 group ${
-      theme === "dark" ? "bg-gray-800" : "bg-white"
-    } border ${theme === "dark" ? "border-gray-700" : "border-gray-200"}`}>
+    <div className={`rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 group ${theme === "dark" ? "bg-gray-800" : "bg-white"
+      } border ${theme === "dark" ? "border-gray-700" : "border-gray-200"}`}>
       {/* Image */}
-      <div className="h-56 overflow-hidden relative">
+      <div className="h-40 overflow-hidden relative">
         <img
           src={image}
           alt={title}
@@ -69,7 +67,7 @@ function ProjectCard({ theme, image, title, description, tags }) {
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-3">
         <h3 className="text-2xl font-bold mb-3">{title}</h3>
         <p className="mb-6 leading-relaxed">{description}</p>
 
@@ -78,11 +76,10 @@ function ProjectCard({ theme, image, title, description, tags }) {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className={`text-sm px-3 py-1 rounded-full ${
-                theme === "dark"
+              className={`text-sm px-3 py-1 rounded-full ${theme === "dark"
                   ? "bg-gray-700 text-rose-400"
                   : "bg-rose-50 text-rose-600"
-              }`}
+                }`}
             >
               {tag}
             </span>
@@ -90,20 +87,18 @@ function ProjectCard({ theme, image, title, description, tags }) {
         </div>
 
         {/* Links */}
-        {/* <div className="flex gap-4">
-          {/* <a href="#" className={`flex items-center gap-2 font-medium transition-colors ${
-            theme === "dark" ? "text-gray-300 hover:text-rose-400" : "text-gray-600 hover:text-rose-500"
-          }`}>
+        <div className="flex gap-4 justify-between">
+          <a href={Githublink} className={`flex items-center gap-2 font-medium transition-colors ${theme === "dark" ? "text-gray-300 hover:text-rose-400" : "text-gray-600 hover:text-rose-500"
+            }`}>
             <Github className="w-5 h-5" />
             <span>Code</span>
           </a>
-          <a href="#" className={`flex items-center gap-2 font-medium transition-colors ${
-            theme === "dark" ? "text-gray-300 hover:text-rose-400" : "text-gray-600 hover:text-rose-500"
-          }`}>
-            <ExternalLink className="w-5 h-5" />
+          <a href={Livelink} className={`flex items-center gap-2 font-medium transition-colors ${theme === "dark" ? "text-gray-300 hover:text-rose-400" : "text-gray-600 hover:text-rose-500"
+            }`}>
+            <Link className="w-5 h-5" />
             <span>Live Demo</span>
-          </a> 
-        </div> */}
+          </a>
+        </div>
       </div>
     </div>
   );
