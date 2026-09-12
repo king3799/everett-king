@@ -55,7 +55,7 @@ function App() {
         // 3. Send visitor information to your email
         await emailjs.send(
           "service_51v2phw",
-          "template_tzpg19k",
+          "template_qwz2db1",
           {
             visitor_ip: ip,
             country: country,
