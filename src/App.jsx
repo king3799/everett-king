@@ -54,7 +54,7 @@ function App() {
 
         // 3. Send visitor information to your email
         await emailjs.send(
-          "service_9w5i94u",
+          "service_51v2phw",
           "template_tzpg19k",
           {
             visitor_ip: ip,
@@ -62,7 +62,7 @@ function App() {
             country_code: countryCode,
           },
           {
-            publicKey: "9y9Pp025chXgSnt4l",
+            publicKey: "kqWJF1j75hjd9Lkec",
           }
         );
 

@@ -54,10 +54,10 @@ export default function Contact({ theme }) {
     
     emailjs
       .send(
-        "service_3falp0a",
-        "template_ctqxrt8",
+        "service_51v2phw",
+        "template_qwz2db1",
         emailData,
-        "9y9Pp025chXgSnt4l"
+        "kqWJF1j75hjd9Lkec"
       )
       .then(
         () => {
