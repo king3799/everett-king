@@ -55,7 +55,7 @@ export default function Contact({ theme }) {
     emailjs
       .send(
         "service_51v2phw",
-        "template_qwz2db1",
+        "template_7vhs0p3",
         emailData,
         "kqWJF1j75hjd9Lkec"
       )
