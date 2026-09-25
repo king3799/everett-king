@@ -18,12 +18,39 @@ export default function Projects({ theme }) {
 
           <ProjectCard
             theme={theme}
-            image="/gas_transaction.png"
-            title="GASTAR – Natural Gas Transaction & Energy Management Platform"
-            description="Rebuilt ENSYTE’s corporate website with React 18, implementing responsive UI, routing, interactive components, and Netlify deployment."
-            tags={["JavaScript", "React", "Firebase", "Bootstrap", "Slick Carousel", "Tailwind CSS"]}
-            Githublink="https://github.com/ashleygierisch/Ensyte_Website_React"
-            Livelink="https://ensyte.com/"
+            image="/telus.95ee4bf0.webp"
+            title="TELUS"
+            description="Built a scalable web platform with React, Next.js, and Node.js, optimized for SEO, accessibility, and performance, and deployed on AWS/GCP with CDN, caching, and security best practices."
+            tags={["TypeScript", "React", "Gatsby.js", "GitHub/GitHub Actions", "Azure", "CI/CD Pipelines", "Directus", ".Net", "SEO"]}
+            Githublink="https://github.com/ashleygierisch/"
+            Livelink="https://www.telus.com/en"
+          />
+           <ProjectCard
+            theme={theme}
+            image="/omers.2fcdf7f7.webp"
+            title="Omers"
+            description="A flexible content platform that dynamically displays and manages website content, with fast page-level updates and caching to improve performance. It enabled teams to publish important information quickly without waiting for regular release cycles."
+            tags={["TanStack Start", "React", "TypeScript", "Tailwind", "Shadcn"]}
+            Githublink="https://github.com/ashleygierisch/"
+            Livelink="https://www.omers.com/"
+          />
+           <ProjectCard
+            theme={theme}
+            image="/amadeus.6fe22bcd.webp"
+            title="Amadeus"
+            description="A modern travel technology platform delivering a seamless experience for global users, supporting high-volume travel operations, real-time data processing, and secure connections between travel suppliers and partners worldwide."
+            tags={["React", "Java", "Spring Boot", "AWS", "Azure", "REST APIs", "Big Data"]}
+            Githublink="https://github.com/ashleygierisch/"
+            Livelink="https://amadeus.com/"
+          />
+           <ProjectCard
+            theme={theme}
+            image="/siteauditpro.cebe0d56.webp"
+            title="TELUS"
+            description="Built a scalable web platform with React, Next.js, and Node.js, optimized for SEO, accessibility, and performance, and deployed on AWS/GCP with CDN, caching, and security best practices."
+            tags={["TypeScript", "React", "Gatsby.js", "GitHub/GitHub Actions", "Azure", "CI/CD Pipelines", "Directus", ".Net", "SEO"]}
+            Githublink="https://github.com/ashleygierisch/"
+            Livelink="https://siteauditpro.com/"
           />
 
           <ProjectCard
@@ -32,8 +59,8 @@ export default function Projects({ theme }) {
             title="Model Context Protocol (MCP) Server Development"
             description="Developed reference MCP servers enabling LLMs to securely interact with files, Git repositories, web content, memory, and other tools through standardized protocols."
             tags={["TypeScript", "Python", "MCP SDK", "Node.js", "uv/uvx", "Claude Desktop"]}
-            Githublink=""
-            Livelink=""
+            Githublink="https://github.com/ashleygierisch/Rust_Embedded_Book"
+            Livelink="https://docs.rust-embedded.org/book/"
           />
 
           <ProjectCard
