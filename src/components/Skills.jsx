@@ -29,8 +29,8 @@ export default function Skills({ theme }) {
               "TypeScript",
               "JavaScript",
               "Java",
-              "C#",
-              ".NET"
+              // "C#",
+              // ".NET"
             ]}
           />
 
