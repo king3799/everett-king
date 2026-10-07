@@ -55,7 +55,7 @@ export default function About({ theme }) {
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                   }`}>
-                  Sep 2024 – Apr 2026
+                  Sep 2024 – Aug 2026
                 </span>
               </div>
               <p className="leading-relaxed text-lg"> Built enterprise AI-powered applications and full-stack solutions for compliance-sensitive environments. Developed agentic AI workflows, RAG systems, FastAPI services, and React/TypeScript interfaces. Worked across AI infrastructure, APIs, databases, testing, observability, and deployment while mentoring engineers and helping establish production standards for LLM applications.</p>
