@@ -49,7 +49,7 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <a href="https://www.zelifcam.net">
+                  <a href="https://codal.com/">
                     <h4 className="font-bold text-xl"> Codal | San Antonio, TX | Remote</h4></a>
                   <p className="text-rose-500 font-medium mb-3">Senior Full Stack Engineer</p>
                 </div>
@@ -67,7 +67,7 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <a href="https://www.zelifcam.net">
+                  <a href="https://www.paralect.com/">
                     <h4 className="font-bold text-xl"> Paralect | San Antonio, TX | Remote</h4></a>
                   <p className="text-rose-500 font-medium mb-3">Senior Software Engineer</p>
                 </div>
@@ -84,7 +84,7 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <a href="https://www.zelifcam.net">
+                  <a href="https://www.saritasa.com/">
                     <h4 className="font-bold text-xl"> Saritasa | San Antonio, TX | Remote</h4></a>
                   <p className="text-rose-500 font-medium mb-3">Software Engineer</p>
                 </div>
@@ -102,8 +102,8 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <a href="https://www.zelifcam.net">
-                    <h4 className="font-bold text-xl"> EInfochips | San Antonio, TX | Remote</h4></a>
+                  <a href="https://www.einfochips.com/">
+                    <h4 className="font-bold text-xl"> EInfochips | San Antonio, TX | On-Site</h4></a>
                   <p className="text-rose-500 font-medium mb-3">Software Engineer</p>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
