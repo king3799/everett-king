@@ -46,7 +46,7 @@ export default function Projects({ theme }) {
            <ProjectCard
             theme={theme}
             image="/siteauditpro.cebe0d56.webp"
-            title="TELUS"
+            title="Siteauditpro"
             description="Built a scalable web platform with React, Next.js, and Node.js, optimized for SEO, accessibility, and performance, and deployed on AWS/GCP with CDN, caching, and security best practices."
             tags={["TypeScript", "React", "Gatsby.js", "GitHub/GitHub Actions", "Azure", "CI/CD Pipelines", "Directus", ".Net", "SEO"]}
             Githublink="https://github.com/king3799/"
