@@ -22,7 +22,7 @@ export default function Projects({ theme }) {
             title="TELUS"
             description="Built a scalable web platform with React, Next.js, and Node.js, optimized for SEO, accessibility, and performance, and deployed on AWS/GCP with CDN, caching, and security best practices."
             tags={["TypeScript", "React", "Gatsby.js", "GitHub/GitHub Actions", "Azure", "CI/CD Pipelines", "Directus", ".Net", "SEO"]}
-            Githublink="https://github.com/ashleygierisch/"
+            Githublink="https://github.com/king3799/"
             Livelink="https://www.telus.com/en"
           />
            <ProjectCard
@@ -31,7 +31,7 @@ export default function Projects({ theme }) {
             title="Omers"
             description="A flexible content platform that dynamically displays and manages website content, with fast page-level updates and caching to improve performance. It enabled teams to publish important information quickly without waiting for regular release cycles."
             tags={["TanStack Start", "React", "TypeScript", "Tailwind", "Shadcn"]}
-            Githublink="https://github.com/ashleygierisch/"
+            Githublink="https://github.com/king3799/"
             Livelink="https://www.omers.com/"
           />
            <ProjectCard
@@ -40,7 +40,7 @@ export default function Projects({ theme }) {
             title="Amadeus"
             description="A modern travel technology platform delivering a seamless experience for global users, supporting high-volume travel operations, real-time data processing, and secure connections between travel suppliers and partners worldwide."
             tags={["React", "Java", "Spring Boot", "AWS", "Azure", "REST APIs", "Big Data"]}
-            Githublink="https://github.com/ashleygierisch/"
+            Githublink="https://github.com/king3799/"
             Livelink="https://amadeus.com/"
           />
            <ProjectCard
@@ -49,7 +49,7 @@ export default function Projects({ theme }) {
             title="TELUS"
             description="Built a scalable web platform with React, Next.js, and Node.js, optimized for SEO, accessibility, and performance, and deployed on AWS/GCP with CDN, caching, and security best practices."
             tags={["TypeScript", "React", "Gatsby.js", "GitHub/GitHub Actions", "Azure", "CI/CD Pipelines", "Directus", ".Net", "SEO"]}
-            Githublink="https://github.com/ashleygierisch/"
+            Githublink="https://github.com/king3799/"
             Livelink="https://siteauditpro.com/"
           />
 
@@ -59,19 +59,19 @@ export default function Projects({ theme }) {
             title="Model Context Protocol (MCP) Server Development"
             description="Developed reference MCP servers enabling LLMs to securely interact with files, Git repositories, web content, memory, and other tools through standardized protocols."
             tags={["TypeScript", "Python", "MCP SDK", "Node.js", "uv/uvx", "Claude Desktop"]}
-            Githublink="https://github.com/ashleygierisch/Rust_Embedded_Book"
+            Githublink="https://github.com/king3799/Rust_Embedded_Book"
             Livelink="https://docs.rust-embedded.org/book/"
           />
 
-          <ProjectCard
+          {/* <ProjectCard
             theme={theme}
             image="/Shouting_game.png"
             title="Shouting game"
             description="Integrated Hugging Face DistilBERT sentiment analysis to dynamically modify gameplay, including player health, enemy behavior, scoring, and visual themes. "
             tags={["Python", "Streamlit", "PyTorch", "DistilBERT", "HTML5 Canvas + JavaScript", "Hugging Face Transformers",]}
-            Githublink="https://github.com/ashleygierisch/Arena-game"
+            Githublink="https://github.com/king3799/Arena-game"
             Livelink="https://arena-shouting-game.streamlit.app/"
-          />
+          /> */}
         </div>
       </div>
     </section>

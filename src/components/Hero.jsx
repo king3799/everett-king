@@ -7,12 +7,12 @@ export default function Hero({ theme }) {
 
         {/* Heading */}
         <h2 className="text-5xl md:text-6xl font-bold mb-4">
-          Full-Stack  <span className="text-rose-500">Web Developer</span>
+           <span className="text-rose-500">Senior</span> Full Stack Engineer
         </h2>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl mb-6 font-medium">
-          Hello, I'm Ashley. 
+          Hi, I'm Everett!
         </p>
         {/* Description */}
         {/* <p className="max-w-4xl text-lg md:text-xl leading-relaxed mb-6">
@@ -22,8 +22,8 @@ export default function Hero({ theme }) {
         {/* Profile Image */}
         <div className={`relative group w-40 h-40 rounded-full overflow-hidden sparkle mb-8 shadow-2xl ${theme === "dark" ? "border-4 border-gray-800" : "border-4 border-white/20"}`}>
           <img
-            src="/profile1.png"
-            alt="Ashley Gierisch"
+            src="/profile1.jpg"
+            alt="Everett King"
             className="w-full h-auto object-cover rounded-full"
           />
         </div>
@@ -48,7 +48,7 @@ export default function Hero({ theme }) {
             View Work
           </a>
           <a
-            href="/Ashley_Gierisch.pdf"
+            href="/King_Everett_Duwell.pdf"
             className={`border-2 px-8 py-4 rounded-xl hover:bg-rose-50 transition-all duration-300 font-medium ${theme === "dark"
               ? "border-rose-500 text-rose-500 hover:text-rose-400"
               : "border-rose-500 text-rose-500 hover:border-rose-600"
@@ -62,15 +62,15 @@ export default function Hero({ theme }) {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 md:gap-16 mb-12">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">10+ </div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">15+ </div>
             <div className="text-sm uppercase tracking-wide">Technologies</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">20+</div>
-            <div className="text-sm uppercase tracking-wide">Projects</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">11+</div>
+            <div className="text-sm uppercase tracking-wide">Years of Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold mb-1">3+</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1">10+</div>
             <div className="text-sm uppercase tracking-wide">AI Integrations</div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Hero({ theme }) {
         {/* Icons */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/ashleygierisch"
+            href="https://github.com/king3799"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
@@ -87,7 +87,7 @@ export default function Hero({ theme }) {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/ashley-gierisch-404279436"
+            href="https://www.linkedin.com/in/everett-duwell-king-560b02441"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="GitHub"
@@ -96,7 +96,7 @@ export default function Hero({ theme }) {
           </a>
           
           <a
-            href="mailto:angierisch00@gmail.com"
+            href="mailto:everett516duwell@outlook.com"
             target="_blank"
             className="group transition-all duration-300 hover:text-rose-500 hover:-translate-y-1"
             aria-label="Email"

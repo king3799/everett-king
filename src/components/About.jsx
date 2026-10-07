@@ -24,7 +24,11 @@ export default function About({ theme }) {
           <div className="flex items-start gap-4">
             <div className="space-y-6 border-l-4 border-rose-200 pl-8">
               <p className="leading-relaxed text-lg">
-                Results-driven full stack web developer with 4 years building backend services, APIs, and cloud-native web applications using Node.js, Python, React, and TypeScript. <br />Strong background in API design, microservices, and AWS-based deployments with hands-on experience in PostgreSQL and NoSQL stores. <br />Comfortable working in Agile teams, contributing to architecture, and delivering secure, maintainable systems relevant to mission-focused environments.
+                I'm a Full Stack Engineer who builds modern web applications and backend systems from the ground up. My primary stack includes <span className="text-1xl font-bold">Python, FastAPI, Django, Node.js, TypeScript, React, and Next.js,</span> allowing me to work comfortably across both backend and frontend development.
+              </p><p className="leading-relaxed text-lg">
+                I have strong experience designing <span className="text-1xl font-bold">REST and OpenAPI-based APIs, real-time applications, database architectures, and distributed services,</span> working with technologies such as <span className="text-1xl font-bold">PostgreSQL, SQLAlchemy, WebSockets, and background processing.</span> I also work with cloud infrastructure, <span className="text-1xl font-bold">CI/CD, testing, and production observability</span> to build software that is reliable and maintainable.
+              </p><p className="leading-relaxed text-lg">
+                My recent work has focused heavily on <span className="text-1xl font-bold">AI and LLM applications,</span> including <span className="text-1xl font-bold">RAG pipelines, AI agents, LangChain, LangGraph, vector databases, embeddings, and integrations with OpenAI, Anthropic, and open-source models.</span> I enjoy bringing these technologies together to create practical products that solve real-world problems.
               </p>
             </div>
           </div>
@@ -36,62 +40,79 @@ export default function About({ theme }) {
             <div className="bg-rose-100 p-3 rounded-xl">
               <Briefcase className="text-rose-500" size={20} />
             </div>
-            <h3 className="text-2xl font-bold">Work Experience</h3>
+            <h3 className="text-2xl font-bold">Experience</h3>
           </div>
 
           <div className="space-y-12 border-l-4 border-rose-200 pl-8">
-            {/* Full stack web developer */}
+            {/*Senior Full stack web developer */}
             <div className="relative">
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
                   <a href="https://www.zelifcam.net">
-                    <h4 className="font-bold text-xl"> Zelifcam, San Antonio, TX </h4></a>
-                  <p className="text-rose-500 font-medium mb-3">Full Stack Web Developer</p>
+                    <h4 className="font-bold text-xl"> Codal | San Antonio, TX | Remote</h4></a>
+                  <p className="text-rose-500 font-medium mb-3">Senior Full Stack Engineer</p>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                   }`}>
-                  Aug 2023 – Apr 2026
+                  Sep 2024 – Apr 2026
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-4 space-y-3">
-                <li>Led development of RESTful APIs and microservices using Node.js and Python (Flask/Django) to support a multi-tenant SaaS platform, improving maintainability and deployment predictability.</li>
-                <li>Designed and implemented authentication and session flows integrated with PostgreSQL and Redis to stabilize user sessions and reduce intermittent failures.</li>
-                <li>Built and maintained serverless ingestion pipelines on AWS Lambda and S3, enabling batch uploads and automated processing of customer data.</li>
-                <li>Architected database schemas and optimized queries in PostgreSQL and MongoDB, improving query consistency and overall API responsiveness.</li>
-                <li>Owned end-to-end frontend implementation of core SaaS features using React, TypeScript, and CSS Modules, delivering responsive interfaces that adapt across desktop, tablet, and mobile breakpoints.</li>
-                <li>Implemented CI/CD pipelines with GitHub Actions and containerized builds using Docker, reducing manual deployment steps and improving release cadence.</li>
-                <li>Developed background workers and scheduled jobs for data processing using Node.js and container orchestration patterns, improving throughput of ETL workflows.</li>
-                <li>Collaborated with product and UX teams to convert SPA requirements into scalable API patterns consumed by React frontends and React Native mobile prototypes.</li>
-                <li>Implemented feature toggles and rollout strategies to safely deploy complex backend changes while coordinating with team members.</li>
-                <li>Integrated third-party APIs and payment/webhook processors, handling retries and idempotency across Node.js services and database transactions.</li>
-                <li>Designed and implemented client-side data fetching patterns with React Query, improving perceived load and simplifying offline handling for slow mobile networks.</li>
-              </ul>
+              <p className="leading-relaxed text-lg"> Built enterprise AI-powered applications and full-stack solutions for compliance-sensitive environments. Developed agentic AI workflows, RAG systems, FastAPI services, and React/TypeScript interfaces. Worked across AI infrastructure, APIs, databases, testing, observability, and deployment while mentoring engineers and helping establish production standards for LLM applications.</p>
+              <span className="text-1xl font-bold">Key areas</span>: Python, FastAPI, React, TypeScript, LangChain, LangGraph, RAG, PostgreSQL, pgvector, Qdrant, OpenAI, Anthropic, vLLM, WebSockets, SSE
             </div>
 
-            {/* FULL STACK ENGINEER */}
+            {/* Senior Software Engineer< */}
             <div className="relative">
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <p className="text-rose-500 font-medium mb-3">Web Developer</p>
+                  <a href="https://www.zelifcam.net">
+                    <h4 className="font-bold text-xl"> Paralect | San Antonio, TX | Remote</h4></a>
+                  <p className="text-rose-500 font-medium mb-3">Senior Software Engineer</p>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                   }`}>
-                  Jun 2022 – Jul 2023
+                  Dec 2021 – Jul 2024
                 </span>
               </div>
-              <ul className="list-disc pl-5 mt-4 space-y-3">
-                <li>Developed full-stack features and reusable components for customer-facing applications using React, TypeScript, and Node.js backed by PostgreSQL.</li>
-                <li>Implemented REST APIs in Python (Flask) and Node.js, focusing on clear contracts and error handling for upstream consumers.</li>
-                <li>Tuned database indexes and query plans in PostgreSQL to improve response times for reporting endpoints and reduce load on primary instances.</li>
-                <li>Partnered with QA to introduce end-to-end and unit testing using Jest and Playwright for critical customer flows in the React frontend.</li>
-                <li>Implemented caching strategies with Redis to alleviate read load and improve perceived page performance for high-traffic endpoints.</li>
-                <li>oordinated cross-team integration for third-party services, handling authentication flows and webhook reliability in Node.js services.</li>
-                <li>Contributed to system design sessions to scope migrations from monolithic code to modular services and clarify ownership boundaries.</li>
-                <li>Provided on-call support and performed incident triage, diagnosing root causes across application, database, and cloud layers.</li>
-                <li>Produced technical documentation and runbooks for deploys, rollbacks, and operational procedures to improve team knowledge transfer.</li>
-              </ul>
+             <p className="leading-relaxed text-lg">Developed backend services and full-stack features for a multi-tenant SaaS platform. Designed secure APIs and PostgreSQL data models, improved application performance and observability, and contributed to AI-powered search and document-processing capabilities. Collaborated closely with product, QA, and frontend teams to deliver reliable customer-facing features.</p>
+              <span className="text-1xl font-bold">Key areas</span>: Python, SQLAlchemy, PostgreSQL, OpenAPI, React, TypeScript, APIs, vector search, SaaS, CI/CD
+            </div>
+            {/* Software Engineer< */}
+            <div className="relative">
+              <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
+                <div>
+                  <a href="https://www.zelifcam.net">
+                    <h4 className="font-bold text-xl"> Saritasa | San Antonio, TX | Remote</h4></a>
+                  <p className="text-rose-500 font-medium mb-3">Software Engineer</p>
+                </div>
+                <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
+                  }`}>
+                  Mar 2019 – Oct 2021
+                </span>
+              </div>
+             <p className="leading-relaxed text-lg">Built custom web applications for clients in healthcare and professional services. Developed Python and Node.js backend services, React/TypeScript interfaces, document-processing workflows, and secure system integrations. Improved application performance, testing, and deployment processes while working directly with client stakeholders.</p>
+              <span className="text-1xl font-bold">Key areas</span>: Python, Node.js, React, TypeScript, REST APIs, document processing, OCR, PostgreSQL, FAISS
+            </div>
+
+            {/* Software Engineer< */}
+            <div className="relative">
+              <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
+              <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
+                <div>
+                  <a href="https://www.zelifcam.net">
+                    <h4 className="font-bold text-xl"> EInfochips | San Antonio, TX | Remote</h4></a>
+                  <p className="text-rose-500 font-medium mb-3">Software Engineer</p>
+                </div>
+                <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
+                  }`}>
+                  Nov 2014 – Jan 2019
+                </span>
+              </div>
+             <p className="leading-relaxed text-lg">Worked on embedded and IoT projects involving device management, telemetry processing, cloud services, and event-driven systems. Built backend services and data pipelines for device provisioning, monitoring, OTA workflows, and large-scale telemetry processing. Collaborated with hardware and QA teams to deliver reliable solutions for connected devices.</p>
+              <span className="text-1xl font-bold">Key areas</span>: IoT, backend development, telemetry, PostgreSQL, NoSQL, message queues, cloud services, device management
             </div>
           </div>
         </div>
@@ -110,12 +131,12 @@ export default function About({ theme }) {
               <div className="absolute -left-[41px] top-0 w-4 h-4 bg-rose-500 rounded-full border-4 border-white"></div>
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4">
                 <div>
-                  <h4 className="font-bold text-xl">The University of Texas at San Antonio</h4>
-                  <p className="mt-1">Bachelor's Degree in Computer Science</p>
+                  <h4 className="font-bold text-xl">The University of Phoenix</h4>
+                  <p className="mt-1">Bachelor's Degree in Information Technology</p>
                 </div>
                 <span className={`text-sm font-semibold px-3 py-1 rounded-lg self-start md:self-auto ${theme === "dark" ? "bg-gray-700 text-gray-200" : "bg-gray-100 text-gray-700"
                   }`}>
-                  Aug 2018 – May 2022
+                  Aug 2010 – May 2014
                 </span>
               </div>
             </div>

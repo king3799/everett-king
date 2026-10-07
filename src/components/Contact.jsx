@@ -103,8 +103,8 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<Mail size={24} />}
                 title="Email"
-                text="angierisch00@gmail.com"
-                link="mailto:angierisch00@gmail.com"
+                text="everett516duwell@outlook.com"
+                link="mailto:everett516duwell@outlook.com"
               />
               {/* <ContactInfo
                 theme={theme}
@@ -117,7 +117,7 @@ export default function Contact({ theme }) {
                 theme={theme}
                 icon={<MapPin size={24} />}
                 title="Location"
-                text="Kerrville, TX"
+                text="Paramount, CA"
               />
             </div>
 
@@ -166,7 +166,7 @@ export default function Contact({ theme }) {
       {/* Footer */}
       <footer className={`text-center py-8 ${theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-900 text-gray-300"}`}>
         <p className="mb-2">
-          Modified with by Ashley Gierisch
+          Modified with by Everett King
         </p>
         <p className="text-gray-500 text-sm">© 2026 All rights reserved.</p>
       </footer>
